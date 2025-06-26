@@ -25,11 +25,11 @@ export default function EducationSection() {
               <div>
                 <h4 className="text-xl font-bold text-gray-900 dark:text-gray-200">McMaster University – MTEI</h4>
                 <p className="text-gray-600 dark:text-gray-200 text-sm italic mb-1">Master of Technology, Entrepreneurship and Innovation</p>
-                <p className="text-gray-600 dark:text-gray-200 text-sm">The degree that laid the foundation for Reza's product thinking and business acumen. This program sparked his journey into the startup world and equipped him with tools to turn innovative ideas into market-ready solutions.</p>
+                <p className="text-gray-600 dark:text-gray-200 text-sm">The degree that laid the foundation for Reza&apos;s product thinking and business acumen. This program sparked his journey into the startup world and equipped him with tools to turn innovative ideas into market-ready solutions.</p>
               </div>
               <div>
                 <h4 className="text-xl font-bold text-gray-900 dark:text-gray-200">Azad University – BSc.</h4>
-                <p className="text-gray-600 dark:text-gray-200 text-sm italic mb-1">Where it all began—Reza's technical roots.</p>
+                <p className="text-gray-600 dark:text-gray-200 text-sm italic mb-1">Where it all began—Reza&apos;s technical roots.</p>
                 <p className="text-gray-600 dark:text-gray-200 text-sm">Here, he learned to build software before he learned to build strategy.</p>
               </div>
             </div>

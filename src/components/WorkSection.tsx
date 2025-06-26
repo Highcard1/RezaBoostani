@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function WorkSection() {
   const projects = [
     {
@@ -98,9 +100,11 @@ export default function WorkSection() {
                   {/* Watt Share Logo and URL */}
                   {project.logo && project.url && (
                     <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 mb-4">
-                      <img
+                      <Image
                         src={project.logo}
                         alt={project.title + ' Logo'}
+                        width={64}
+                        height={64}
                         className="w-16 h-16 object-contain"
                       />
                       <span className="text-lg font-semibold text-green-600 hover:underline">{project.url.replace('https://', '')}</span>
