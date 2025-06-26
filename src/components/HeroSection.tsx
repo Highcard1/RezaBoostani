@@ -18,7 +18,7 @@ export default function HeroSection() {
               href="#work"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
-              See What I've Built
+              See What I&apos;ve Built
             </a>
             <a
               href="#contact"
