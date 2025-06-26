@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     "startup",
     "product development",
     "Watt Share",
-    "Ivy Charging Network",
-    "ThunderVolt",
+  
+
     "portfolio"
   ],
   authors: [{ name: "Reza Boostani" }],
@@ -90,7 +90,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#000000" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200`}
       >
         <ThemeProvider
           attribute="class"

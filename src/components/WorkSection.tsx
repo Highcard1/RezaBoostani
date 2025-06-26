@@ -2,7 +2,7 @@ export default function WorkSection() {
   const projects = [
     {
       title: "Watt Share",
-      role: "Founder & Product Manager",
+      role: "Lead Product Manager",
       roleColor: "bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200",
       timeline: "2024–Present",
       problem: "EV owners had unused home chargers while other drivers struggled to find reliable charging options. The market needed a peer-to-peer solution that could monetize idle infrastructure.",
@@ -18,16 +18,18 @@ export default function WorkSection() {
         "Partnered with local utilities for compliance"
       ],
       impact: [
-        "Launched MVP in 3 months",
+        "Launched MVP & Beta",
         "Reduced development costs by 40%",
-        "Secured $25K in early-stage funding",
+        "Secured fund in early-stage",
         "Onboarded 50+ beta users"
       ],
-      techStack: ["Next.js", "PostgreSQL", "Supabase", "WebSockets", "Stripe"]
+      techStack: ["Next.js", "PostgreSQL", "Supabase", "WebSockets", "Stripe"],
+      logo: "/NEWLOGO.png",
+      url: "https://wattshare.ca"
     },
     {
-      title: "Ivy Charging Network",
-      role: "Associate Product Manager",
+      title: "Ontario Charging Network",
+      role: "Product Management",
       roleColor: "bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200",
       timeline: "2023",
       problem: "Users were frustrated with the charging experience, leading to low satisfaction scores and reduced network utilization. The company needed a subscription model to increase recurring revenue.",
@@ -81,55 +83,66 @@ export default function WorkSection() {
     <section id="work" className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-            Case Studies
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-200 mb-4">
+            Products & Experience
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-200 max-w-2xl mx-auto">
             Real problems solved, products shipped, and impact measured
           </p>
         </div>
         <div className="space-y-16">
           {projects.map((project, index) => (
-            <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-xl p-8 shadow-lg">
+            <div key={index} className="bg-gray-50 dark:bg-gray-900 rounded-xl p-8 shadow-lg">
               <div className="grid lg:grid-cols-3 gap-8">
                 <div className="lg:col-span-2 space-y-6">
+                  {/* Watt Share Logo and URL */}
+                  {project.logo && project.url && (
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 mb-4">
+                      <img
+                        src={project.logo}
+                        alt={project.title + ' Logo'}
+                        className="w-16 h-16 object-contain"
+                      />
+                      <span className="text-lg font-semibold text-green-600 hover:underline">{project.url.replace('https://', '')}</span>
+                    </a>
+                  )}
                   <div className="flex items-center gap-4 mb-6">
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100">{project.title}</h3>
+                    <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-200">{project.title}</h3>
                     <span className={`px-3 py-1 ${project.roleColor} text-sm rounded-full font-medium`}>
                       {project.role}
                     </span>
-                    <span className="text-gray-500 dark:text-gray-400 text-sm">{project.timeline}</span>
+                    <span className="text-gray-500 dark:text-gray-200 text-sm">{project.timeline}</span>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2 text-lg">The Problem</h4>
-                    <p className="text-gray-600 dark:text-gray-300">{project.problem}</p>
+                    <h4 className="font-semibold text-gray-900 dark:text-gray-200 mb-2 text-lg">The Problem</h4>
+                    <p className="text-gray-600 dark:text-gray-200">{project.problem}</p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-2 text-lg">What I Did</h4>
-                    <p className="text-gray-600 dark:text-gray-300">{project.whatIDid}</p>
+                    <h4 className="font-semibold text-gray-900 dark:text-gray-200 mb-2 text-lg">What I Did</h4>
+                    <p className="text-gray-600 dark:text-gray-200">{project.whatIDid}</p>
                   </div>
                   
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Key Challenges</h4>
+                      <h4 className="font-semibold text-gray-900 dark:text-gray-200 mb-3">Key Challenges</h4>
                       <ul className="space-y-2">
                         {project.challenges.map((challenge, i) => (
                           <li key={i} className="flex items-start gap-2">
                             <span className="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                            <span className="text-gray-600 dark:text-gray-300 text-sm">{challenge}</span>
+                            <span className="text-gray-600 dark:text-gray-200 text-sm">{challenge}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">How I Solved Them</h4>
+                      <h4 className="font-semibold text-gray-900 dark:text-gray-200 mb-3">How I Solved Them</h4>
                       <ul className="space-y-2">
                         {project.solutions.map((solution, i) => (
                           <li key={i} className="flex items-start gap-2">
                             <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                            <span className="text-gray-600 dark:text-gray-300 text-sm">{solution}</span>
+                            <span className="text-gray-600 dark:text-gray-200 text-sm">{solution}</span>
                           </li>
                         ))}
                       </ul>
@@ -139,12 +152,12 @@ export default function WorkSection() {
                 
                 <div className="space-y-6">
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Impact & Results</h4>
+                    <h4 className="font-semibold text-gray-900 dark:text-gray-200 mb-3">Impact & Results</h4>
                     <div className="space-y-2">
                       {project.impact.map((result, i) => (
                         <div key={i} className="flex items-center gap-2">
                           <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                          <span className="text-gray-600 dark:text-gray-300 text-sm">{result}</span>
+                          <span className="text-gray-600 dark:text-gray-200 text-sm">{result}</span>
                         </div>
                       ))}
                     </div>
@@ -152,7 +165,7 @@ export default function WorkSection() {
                   
                   {project.techStack && (
                     <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Tech Stack</h4>
+                      <h4 className="font-semibold text-gray-900 dark:text-gray-200 mb-3">Tech Stack</h4>
                       <div className="flex flex-wrap gap-2">
                         {project.techStack.map((tech) => (
                           <span key={tech} className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm rounded-full">
@@ -165,7 +178,7 @@ export default function WorkSection() {
                   
                   {project.focusAreas && (
                     <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Focus Areas</h4>
+                      <h4 className="font-semibold text-gray-900 dark:text-gray-200 mb-3">Focus Areas</h4>
                       <div className="flex flex-wrap gap-2">
                         {project.focusAreas.map((area) => (
                           <span key={area} className="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 text-sm rounded-full">
@@ -178,12 +191,12 @@ export default function WorkSection() {
                   
                   {project.achievements && (
                     <div>
-                      <h4 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Key Achievements</h4>
+                      <h4 className="font-semibold text-gray-900 dark:text-gray-200 mb-3">Key Achievements</h4>
                       <div className="space-y-2">
                         {project.achievements.map((achievement) => (
                           <div key={achievement} className="flex items-center gap-2">
                             <span className="w-2 h-2 bg-purple-600 rounded-full"></span>
-                            <span className="text-gray-600 dark:text-gray-300 text-sm">{achievement}</span>
+                            <span className="text-gray-600 dark:text-gray-200 text-sm">{achievement}</span>
                           </div>
                         ))}
                       </div>
