@@ -23,25 +23,25 @@ export default function ToolsSection() {
   ];
 
   return (
-    <section id="tools" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
+    <section id="tools" className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-gray-200 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Tools & Methods
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-200 max-w-2xl mx-auto">
+          <p className="text-lg max-w-2xl mx-auto">
             The technologies and methodologies I use to bring ideas to life
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {toolCategories.map((category) => (
             <div key={category.title} className="space-y-4">
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-200">{category.title}</h3>
+              <h3 className="text-xl font-semibold">{category.title}</h3>
               <div className="space-y-3">
                 {category.tools.map((tool) => (
                   <div key={tool} className="flex items-center gap-3">
                     <div className={`w-2 h-2 ${category.color} rounded-full`}></div>
-                    <span className="text-gray-600 dark:text-gray-200">{tool}</span>
+                    <span>{tool}</span>
                   </div>
                 ))}
               </div>
