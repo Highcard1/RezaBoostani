@@ -51,7 +51,7 @@ export default function Home() {
                 href="#contact"
                 className="border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 px-6 sm:px-8 py-3 sm:py-3 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base"
               >
-                Let's Connect
+                Let&apos;s Connect
               </a>
             </div>
           </div>
