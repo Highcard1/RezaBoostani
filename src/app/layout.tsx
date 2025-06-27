@@ -24,22 +24,37 @@ export const metadata: Metadata = {
     "startup",
     "product development",
     "Watt Share",
-  
-
-    "portfolio"
+    "Ivy Charging",
+    "ThunderVolt",
+    "McMaster University",
+    "MTEI",
+    "portfolio",
+    "SaaS",
+    "user research",
+    "product strategy",
+    "full-stack development",
+    "Next.js",
+    "React",
+    "TypeScript"
   ],
-  authors: [{ name: "Reza Boostani" }],
+  authors: [{ name: "Reza Boostani", url: "https://www.rezaboostani.com" }],
   creator: "Reza Boostani",
   publisher: "Reza Boostani",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://www.rezaboostani.com'),
   robots: {
     index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
   },
   openGraph: {
@@ -87,12 +102,18 @@ export default function RootLayout({
         <meta property="og:description" content="Reza Boostani - Product Manager, SaaS & Startups, EV Charging, Toronto. Building the future of user-first products." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rezaboostani.com/" />
-        <meta property="og:image" content="https://wattshare-images.s3.us-east-1.amazonaws.com/pexels-zion-10029874.jpg" />
+        <meta property="og:image" content="https://www.rezaboostani.com/20250627_150331-Copy.jpg" />
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="480" />
+        <meta property="og:image:alt" content="Reza Boostani - Product Manager and Technical Builder" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Reza Boostani | Product Manager &amp; Builder" />
         <meta name="twitter:description" content="Reza Boostani - Product Manager, SaaS & Startups, EV Charging, Toronto. Building the future of user-first products." />
-        <meta name="twitter:image" content="https://wattshare-images.s3.us-east-1.amazonaws.com/pexels-zion-10029874.jpg" />
+        <meta name="twitter:image" content="https://www.rezaboostani.com/20250627_150331-Copy.jpg" />
+        <meta name="twitter:image:alt" content="Reza Boostani - Product Manager and Technical Builder" />
         <link rel="canonical" href="https://www.rezaboostani.com/" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#2563eb" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Person',
@@ -112,8 +133,21 @@ export default function RootLayout({
             addressLocality: 'Toronto',
             addressCountry: 'Canada'
           },
-          image: 'https://wattshare-images.s3.us-east-1.amazonaws.com/pexels-zion-10029874.jpg',
-          description: 'Product Manager & Builder | SaaS & Startups | EV Charging | Toronto'
+          image: 'https://www.rezaboostani.com/20250627_150331-Copy.jpg',
+          description: 'Product Manager & Builder | SaaS & Startups | EV Charging | Toronto',
+          alumniOf: {
+            '@type': 'Organization',
+            name: 'McMaster University'
+          },
+          knowsAbout: [
+            'Product Management',
+            'EV Charging',
+            'Sustainable Technology',
+            'Startup Development',
+            'Full-Stack Development',
+            'User Research',
+            'Product Strategy'
+          ]
         }) }} />
         <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;700&display=swap" rel="stylesheet" />
       </Head>

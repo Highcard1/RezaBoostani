@@ -44,8 +44,9 @@ export default function HeroSection() {
           <div className="flex-1 flex rounded justify-center lg:justify-end">
             <img
               src={"/20250627_150331-Copy.jpg"}
-              alt="Profile Picture"
+              alt="Reza Boostani - Product Manager and Technical Builder based in Toronto, specializing in EV charging and sustainable technology"
               className="w-80 h-96 sm:w-100 sm:h-120 rounded border-white border-4 object-cover border-0 border-gray-200 shadow-lg"
+              loading="eager"
             />
           </div>
         </div>
