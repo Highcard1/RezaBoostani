@@ -7,9 +7,10 @@ export default function WorkSection() {
       roleColor: "bg-green-100 text-green-800",
       timeline: "2024–Present",
       problem: "EV owners had unused home chargers, while tenants and neighbors in MURBs lacked access to convenient charging options. The market needed a peer-to-peer solution to unlock and monetize this underutilized infrastructure.",
-      whatIDid: "Built a charger-sharing platform from scratch. Conducted 50+ user interviews, validated product-market fit, wrote full-stack code (Next.js, PostgreSQL, Supabase), defined product roadmap, and secured early-stage funding.",
+      whatIDid: "Built a charger-sharing platform from scratch. Conducted user interviews, validated product-market fit, wrote full-stack code, defined product roadmap, and secured early-stage funding.",
       challenges: [
         "Complex payment and scheduling system",
+        "Scalabale OCPP, OCPI implementations",
         "Trust and safety between users",
         "Regulatory compliance for energy sharing"
       ],
@@ -34,8 +35,8 @@ export default function WorkSection() {
       roleColor: "bg-blue-100 text-blue-800",
       timeline: "2023",
       url: "https://ivycharge.com",
-      problem: "Users were frustrated with the charging experience, leading to low satisfaction scores and reduced network utilization. The company needed a subscription model to increase recurring revenue.",
-      whatIDid: "Led customer research initiative, restructured user workflows, and launched a new subscription-based e-commerce flow. Managed cross-functional teams across web and mobile platforms.",
+      problem: "Streamlining the process through a subscription model offered a path to better engagement and increased recurring revenue.",
+      whatIDid: "Led customer research initiative, restructured user workflows, and launched a new subscription-based e-commerce flow.",
       challenges: [
         "Complex legacy billing system",
         "User resistance to subscription model",
@@ -49,8 +50,8 @@ export default function WorkSection() {
       impact: [
         "+60% user satisfaction score",
         "+50% revenue through new channel",
-        "Reduced support tickets by 30%",
-        "Increased monthly active users by 25%"
+      ,
+        "Increased sales by 50%"
       ],
       focusAreas: ["UX Design", "Customer Journey", "E-commerce", "Mobile App"]
     },
@@ -59,7 +60,7 @@ export default function WorkSection() {
       role: "Product Manager",
       roleColor: "bg-purple-100 text-purple-800",
       timeline: "2021–2023",
-      problem: "EV owners needed better home charging solutions that were both powerful and user-friendly. The market lacked integrated hardware-software solutions.",
+      problem: "Many EV owners living in condos faced limited access to home charging due to inadequate infrastructure in shared parking spaces. The market lacked a unified hardware-software solution tailored to these multi-unit environments.",
       whatIDid: "Led end-to-end product development for EV hardware and its software companion. Conducted 300+ user interviews, defined product features, ran A/B testing, and secured incubation by McMaster's The Forge.",
       challenges: [
         "Hardware-software integration complexity",
@@ -72,12 +73,12 @@ export default function WorkSection() {
         "Implemented agile processes"
       ],
       impact: [
-        "Secured $50K in funding",
+        "Secured $50K+ in funding",
         "Established standard UX process",
         "Strong stakeholder buy-in across teams",
         "Successfully incubated at The Forge"
       ],
-      achievements: ["$50K Funding", "300+ User Interviews", "Incubator Acceptance", "Hardware + Software Launch"],
+      achievements: ["$50K Funding", "300+ User Interviews", "Incubator Acceptance", "Hardware + Software Launch", "Achieved successful exit"],
       images: [
         "https://wattshare-images.s3.us-east-1.amazonaws.com/Screenshot+2025-06-26+205653.png"
       ]

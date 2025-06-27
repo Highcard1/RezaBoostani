@@ -16,10 +16,10 @@ export default function AboutSection() {
               My journey started in engineering, but I quickly realized that the most impactful work happens at the intersection of strategy and execution. I&apos;m not just a product manager—I&apos;m a builder who understands the full stack, a strategist who validates with real users, and a leader who ships products that matter.
             </p>
             <p className="leading-relaxed">
-              From technical roots to building EV startups, I&apos;ve secured funding, brought multiple MVPs to market, and learned that the best products come from deep user empathy combined with hands-on technical execution. I thrive in uncertainty and wear multiple hats—conducting user research, writing code, building partnerships, and leading cross-functional teams.
+              From technical roots to building startups, I&apos;ve secured funding, brought multiple MVPs to market, and learned that the best products come from deep user empathy combined with hands-on technical execution. I thrive in uncertainty and wear multiple hats—conducting user research, writing code, building partnerships, and leading cross-functional teams.
             </p>
             <p className="leading-relaxed">
-              My mission is simple: accelerate the transition to sustainable tech and user-first products. Whether it&apos;s EV charging networks, climate tech solutions, or SaaS platforms, I focus on solving real problems with measurable impact.
+              My mission is simple: accelerate the transition to sustainable tech and user-first products.
             </p>
           </div>
           <div className="bg-gray-50 rounded-xl p-8 shadow-lg">

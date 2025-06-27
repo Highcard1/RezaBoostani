@@ -117,7 +117,7 @@ const sampleBlogs = [
       
       <p>The future of P2P EV charging will likely see increased integration of AI for optimization, continued expansion into underserved areas, and diversification of revenue streams beyond direct charging fees. Ultimately, the long-term viability and widespread impact of the EV BnB model depend on its ability to continuously innovate, build robust trust frameworks, and strategically collaborate across the broader EV ecosystem, ensuring a seamless and reliable charging experience for all.</p>
     `,
-    image: "/@pexels-zion-10029874 (1).jpg",
+    image: "https://wattshare-images.s3.us-east-1.amazonaws.com/pexels-zion-10029874.jpg",
     date: " April, 21, 2025",
     author: "Reza Boostani",
     readingTime: "15 min read",
