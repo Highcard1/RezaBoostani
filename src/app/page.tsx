@@ -17,6 +17,7 @@ export default function Home() {
           <img
             src="/pexels-daniel-andraski-197681005-11554666.jpg"
             alt="Background"
+            
             className="w-full h-full object-cover object-center opacity-60"
           />
           {/* Overlay removed for debugging */}
