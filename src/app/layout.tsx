@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Chakra_Petch } from "next/font/google";
 import "./globals.css";
 import Head from 'next/head';
 
-const roboto = Roboto({
-  weight: ["300", "400", "500", "700"],
+const chakraPetch = Chakra_Petch({
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
-  variable: "--font-roboto",
+  variable: "--font-chakra-petch",
 });
 
 export const metadata: Metadata = {
@@ -117,7 +117,7 @@ export default function RootLayout({
         }) }} />
       </Head>
       <body
-        className={`${roboto.variable} font-roboto antialiased`}
+        className={`${chakraPetch.variable} font-chakra-petch antialiased`}
       >
         {children}
       </body>

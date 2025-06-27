@@ -9,7 +9,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'roboto': ['var(--font-roboto)', 'Roboto', 'sans-serif'],
+        'chakra-petch': ['var(--font-chakra-petch)', 'Chakra Petch', 'sans-serif'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
