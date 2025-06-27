@@ -6,7 +6,6 @@ import WorkSection from "@/components/WorkSection";
 import ToolsSection from "@/components/ToolsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import Image from "next/image";
 
 export default function Home() {
   return (
