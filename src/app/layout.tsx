@@ -1,16 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { ThemeProvider } from "next-themes";
+import { Tomorrow } from "next/font/google";
 import "./globals.css";
+import Head from 'next/head';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const tomorrow = Tomorrow({
+  weight: ["400", "700"],
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-tomorrow",
 });
 
 export const metadata: Metadata = {
@@ -18,8 +14,9 @@ export const metadata: Metadata = {
   description: "Reza Boostani is a product manager and technical builder based in Toronto, specializing in EV charging and sustainable tech. Driving user-centric products from idea to launch.",
   keywords: [
     "Reza Boostani",
-    "rezaboostani",
+    "reza boostani",
     "product manager",
+    "product owner",
     "technical builder",
     "EV charging",
     "sustainable tech",
@@ -27,8 +24,8 @@ export const metadata: Metadata = {
     "startup",
     "product development",
     "Watt Share",
-    "Ivy Charging Network",
-    "ThunderVolt",
+  
+
     "portfolio"
   ],
   authors: [{ name: "Reza Boostani" }],
@@ -82,24 +79,48 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="msapplication-TileColor" content="#000000" />
-      </head>
+    <html lang="en" suppressHydrationWarning className={`bg-transparent text-gray-900 ${tomorrow.variable} font-sans`}>
+      <Head>
+        <title>Reza Boostani | Product Manager &amp; Builder</title>
+        <meta name="description" content="Reza Boostani - Product Manager, SaaS & Startups, EV Charging, Toronto. Building the future of user-first products. Portfolio, blog, and experience." />
+        <meta property="og:title" content="Reza Boostani | Product Manager &amp; Builder" />
+        <meta property="og:description" content="Reza Boostani - Product Manager, SaaS & Startups, EV Charging, Toronto. Building the future of user-first products." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.rezaboostani.com/" />
+        <meta property="og:image" content="https://wattshare-images.s3.us-east-1.amazonaws.com/pexels-zion-10029874.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Reza Boostani | Product Manager &amp; Builder" />
+        <meta name="twitter:description" content="Reza Boostani - Product Manager, SaaS & Startups, EV Charging, Toronto. Building the future of user-first products." />
+        <meta name="twitter:image" content="https://wattshare-images.s3.us-east-1.amazonaws.com/pexels-zion-10029874.jpg" />
+        <link rel="canonical" href="https://www.rezaboostani.com/" />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Person',
+          name: 'Reza Boostani',
+          url: 'https://www.rezaboostani.com/',
+          sameAs: [
+            'https://linkedin.com/in/rezaboostani',
+            'https://github.com/Marshico'
+          ],
+          jobTitle: 'Product Manager',
+          worksFor: {
+            '@type': 'Organization',
+            name: 'WattShare'
+          },
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'Toronto',
+            addressCountry: 'Canada'
+          },
+          image: 'https://wattshare-images.s3.us-east-1.amazonaws.com/pexels-zion-10029874.jpg',
+          description: 'Product Manager & Builder | SaaS & Startups | EV Charging | Toronto'
+        }) }} />
+        <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;700&display=swap" rel="stylesheet" />
+      </Head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300`}
+        className="antialiased"
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        {children}
       </body>
     </html>
   );

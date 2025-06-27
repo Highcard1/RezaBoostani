@@ -1,0 +1,55 @@
+export default function HeroSection() {
+  return (
+    <section id="home" className=" relative pt-20 pb-16 px-0 sm:px-0 lg:px-0 bg-white dark:bg-gray-900 overflow-hidden w-full">
+      {/* Full-width background image */}
+      <div className=" absolute inset-0 w-full h-full z-0">
+        <img
+          src="/pexels-daniel-andraski-197681005-11554666.jpg"
+          alt="Background"
+          className="w-full h-full object-cover object-center opacity-5"
+        />
+        <div className="absolute inset-0 w-full h-full bg-white/70 " />
+      </div>
+      {/* Centered content container */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white/95">
+        <div className="flex flex-col lg:flex-row items-center justify-between shadow-lg p-8 gap-8">
+          {/* Optional: Add a subtle background only behind the text for readability */}
+          {/* <div className="absolute inset-0 bg-white bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-60 rounded-xl pointer-events-none" /> */}
+          <div className="flex-1 text-center lg:text-left">
+            <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-gray-100 mb-6 leading-tight">
+              I turn ideas into products{" "}
+              <span className="text-blue-600 dark:text-blue-400">people actually use.</span>
+            </h1>
+            <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl lg:mx-0 mx-auto font-medium">
+              Product Manager & Builder | EV & Climate Tech | SaaS & Startups
+            </p>
+            <p className="text-lg text-gray-500 dark:text-gray-400 mb-12 max-w-2xl lg:mx-0 mx-auto">
+              Based in Toronto, building the future of sustainable mobility and user-first products.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <a
+                href="#work"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-medium transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                See What I&apos;ve Built
+              </a>
+              <a
+                href="#about"
+                className="border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 px-8 py-4 rounded-lg font-medium transition-all duration-200 transform hover:scale-105"
+              >
+                Explore the Portfolio
+              </a>
+            </div>
+          </div>
+          <div className="flex-1 flex rounded justify-center lg:justify-end">
+            <img
+              src={"/20250627_150331-Copy.jpg"}
+              alt="Profile Picture"
+              className="w-100 h-120 rounded border-white border-4 object-cover border-0 border-gray-200 shadow-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+} 
