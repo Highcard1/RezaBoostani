@@ -1,5 +1,4 @@
 import { FaUniversity, FaAward, FaMicrosoft, FaGoogle, FaPiedPiper } from "react-icons/fa";
-import { SiCoursera, SiCredly, SiScrumalliance } from "react-icons/si";
 
 export default function EducationSection() {
   return (

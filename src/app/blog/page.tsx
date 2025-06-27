@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import ContactSection from '@/components/ContactSection';
 import { ClockIcon } from '@heroicons/react/24/outline';
+import Image from 'next/image';
 
 // Sample blog data structure - you can add your content here later
 const sampleBlogs = [
@@ -61,10 +62,14 @@ export default function BlogPage() {
               <Link href={`/blog/${blog.id}`} key={blog.id}>
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-full">
                   <div className="h-48 sm:h-56 relative">
-                    <img 
-                      src={blog.image} 
+                    <Image
+                      src={blog.image}
                       alt={blog.title}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover"
+                      style={{ objectFit: 'cover' }}
+                      sizes="(max-width: 1024px) 100vw, 33vw"
+                      priority={blog.id === 1}
                     />
                   </div>
                   <div className="p-4 sm:p-6">

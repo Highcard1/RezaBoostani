@@ -369,12 +369,12 @@ export default function BlogPost() {
                 <div className="lg:w-2/3">
                   <div className="w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] relative">
                     <Image
-                      src={blog.id === 1 ? "https://wattshare-images.s3.us-east-1.amazonaws.com/pexels-zion-10029874.jpg" : blog.image}
+                      src={blog.image}
                       alt={blog.title}
-                      fill
-                      className="object-cover"
-                      style={{ objectFit: 'cover' }}
-                      sizes="(max-width: 1024px) 100vw, 66vw"
+                      width={400}
+                      height={250}
+                      className="w-full h-full object-cover"
+                      sizes="(max-width: 1024px) 100vw, 33vw"
                       priority={blog.id === 1}
                     />
                   </div>
