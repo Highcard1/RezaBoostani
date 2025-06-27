@@ -77,7 +77,10 @@ export default function WorkSection() {
         "Strong stakeholder buy-in across teams",
         "Successfully incubated at The Forge"
       ],
-      achievements: ["$50K Funding", "300+ User Interviews", "Incubator Acceptance", "Hardware + Software Launch"]
+      achievements: ["$50K Funding", "300+ User Interviews", "Incubator Acceptance", "Hardware + Software Launch"],
+      images: [
+        "https://wattshare-images.s3.us-east-1.amazonaws.com/Screenshot+2025-06-26+205653.png"
+      ]
     }
   ];
 
@@ -211,6 +214,19 @@ export default function WorkSection() {
                           </div>
                         ))}
                       </div>
+                    </div>
+                  )}
+                  
+                  {/* ThunderVolt Image - placed in right sidebar */}
+                  {project.title === "ThunderVolt" && project.images && (
+                    <div className="mt-6">
+                      <Image
+                        src={project.images[0]}
+                        alt="ThunderVolt project screenshot by Reza Boostani"
+                        width={250}
+                        height={150}
+                        className="rounded-lg object-cover shadow-md w-full"
+                      />
                     </div>
                   )}
                 </div>
