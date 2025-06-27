@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'chakra-petch': ['var(--font-chakra-petch)', 'Chakra Petch', 'sans-serif'],
+        'sans': ['Tomorrow', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

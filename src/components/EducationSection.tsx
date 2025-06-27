@@ -14,12 +14,20 @@ export default function EducationSection() {
         </div>
         <div className="space-y-12">
           {/* Formal Education */}
-          <div>
+          <div className="relative">
+            {/* Vertical image strip for Formal Education */}
+            <div className="absolute top-0 right-0 h-full w-16 z-10 rounded-r-xl overflow-hidden shadow-md">
+              <img
+                src="/20180706-152629-McMaster-University-Campus-0004-1.jpg"
+                alt="Formal Education Accent"
+                className="w-full h-full object-cover object-center opacity-90"
+              />
+            </div>
             <div className="flex items-center gap-4 mb-4">
               <FaUniversity className="text-3xl text-blue-600" />
               <h3 className="text-2xl font-semibold">Formal Education</h3>
             </div>
-            <div className="ml-10 space-y-6 border-l-4 border-blue-200 pl-6">
+            <div className="ml-10 space-y-6 border-l-4 border-blue-200 pl-6 pr-24 sm:pr-20">
               <div>
                 <h4 className="text-xl font-bold">McMaster University – MTEI</h4>
                 <p className="text-sm italic mb-1">Master of Technology, Entrepreneurship and Innovation</p>
@@ -34,12 +42,20 @@ export default function EducationSection() {
           </div>
 
           {/* Skill Boosters / Product Toolkit */}
-          <div>
+          <div className="relative">
+            {/* Vertical image strip for Skill Boosters */}
+            <div className="absolute top-0 right-0 h-full w-16 z-10 rounded-r-xl overflow-hidden shadow-md">
+              <img
+                src="/computer-8779040_1280.jpg"
+                alt="Skill Boosters Accent"
+                className="w-full h-full object-cover object-center opacity-90"
+              />
+            </div>
             <div className="flex items-center gap-4 mb-4">
               <FaAward className="text-2xl text-pink-500" />
               <h3 className="text-2xl font-semibold">Skill Boosters / Product Toolkit</h3>
             </div>
-            <div className="ml-10 space-y-8 border-l-4 border-pink-200 pl-6">
+            <div className="ml-10 space-y-8 border-l-4 border-pink-200 pl-6 pr-24 sm:pr-20">
               {/* Pendo.io – Product Analytics Certification */}
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
@@ -141,12 +157,20 @@ export default function EducationSection() {
           </div>
 
           {/* AI, Cloud & Marketing Tech */}
-          <div>
+          <div className="relative">
+            {/* Vertical image strip for AI, Cloud & Marketing Tech */}
+            <div className="absolute top-0 right-0 h-full w-16 z-10 rounded-r-xl overflow-hidden shadow-md">
+              <img
+                src="/apps-426559_1280.jpg"
+                alt="AI, Cloud & Marketing Tech Accent"
+                className="w-full h-full object-cover object-center opacity-90"
+              />
+            </div>
             <div className="flex items-center gap-4 mb-4">
               <FaAward className="text-2xl text-blue-700" />
               <h3 className="text-2xl font-semibold">AI, Cloud & Marketing Tech</h3>
             </div>
-            <div className="ml-10 space-y-8 border-l-4 border-blue-200 pl-6">
+            <div className="ml-10 space-y-8 border-l-4 border-blue-200 pl-6 pr-24 sm:pr-20">
               {/* Microsoft Azure – AI Product Builder */}
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">

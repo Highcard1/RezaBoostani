@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Chakra_Petch } from "next/font/google";
+import { Tomorrow } from "next/font/google";
 import "./globals.css";
 import Head from 'next/head';
 
-const chakraPetch = Chakra_Petch({
-  weight: ["300", "400", "500", "600", "700"],
+const tomorrow = Tomorrow({
+  weight: ["400", "700"],
   subsets: ["latin"],
-  variable: "--font-chakra-petch",
+  variable: "--font-tomorrow",
 });
 
 export const metadata: Metadata = {
@@ -79,7 +79,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="bg-white text-gray-900">
+    <html lang="en" suppressHydrationWarning className={`bg-transparent text-gray-900 ${tomorrow.variable} font-sans`}>
       <Head>
         <title>Reza Boostani | Product Manager &amp; Builder</title>
         <meta name="description" content="Reza Boostani - Product Manager, SaaS & Startups, EV Charging, Toronto. Building the future of user-first products. Portfolio, blog, and experience." />
@@ -115,9 +115,10 @@ export default function RootLayout({
           image: 'https://wattshare-images.s3.us-east-1.amazonaws.com/pexels-zion-10029874.jpg',
           description: 'Product Manager & Builder | SaaS & Startups | EV Charging | Toronto'
         }) }} />
+        <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
       <body
-        className={`${chakraPetch.variable} font-chakra-petch antialiased`}
+        className="antialiased"
       >
         {children}
       </body>
