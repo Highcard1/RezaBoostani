@@ -106,7 +106,7 @@ export default function EducationSection() {
               {/* Scrum.org – PSPO I */}
               <div className="flex items-start gap-4">
                 <div className="w-8 h-8 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <SiScrumalliance className="text-pink-600" />
+                  {/* Placeholder for the removed <SiScrumalliance /> */}
                 </div>
                 <div>
                   <div className="flex flex-col sm:flex-row sm:items-center gap-2">
