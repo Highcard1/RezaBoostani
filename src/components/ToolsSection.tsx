@@ -18,7 +18,7 @@ export default function ToolsSection() {
     {
       title: "Methods",
       color: "bg-orange-600",
-      tools: ["Agile", "Scrum", "A/B Testing", "KPIs", "User Research"]
+      tools: ["Agile", "Scrum", "Waterfall", "Lean Startup","Design Thinking" , "User Research"]
     }
   ];
 
