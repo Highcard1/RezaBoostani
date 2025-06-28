@@ -8,12 +8,12 @@ export default function ToolsSection() {
     {
       title: "Tech Stack",
       color: "bg-green-600",
-      tools: ["React", "Next.js", "Vue.js", "Express.js", "WebSocket", "WIX" , "Node.js", "GraphQL", "TypeScript", "JavaScript", "Python"]
+      tools: ["TensorFlow","React", "Next.js", "Vue.js", "Express.js", "WebSocket", "WIX" , "Node.js", "GraphQL", "TypeScript", "JavaScript", "Python"]
     },
     {
       title: "Data & Cloud",
       color: "bg-purple-600",
-      tools: ["Azure", "AWS", "GA4", "SQL", "PostgreSQL", "Supabase", " Firebase", "Google Cloud"]
+      tools: ["Pandas","Azure", "AWS", "GA4", "SQL", "PostgreSQL", "Supabase", " Firebase", "Google Cloud"]
     },
     {
       title: "Methods",
