@@ -6,8 +6,22 @@ import WorkSection from "@/components/WorkSection";
 import ToolsSection from "@/components/ToolsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import AnalyticsDashboard from "@/components/AnalyticsDashboard";
+import { trackScrollDepth, trackPortfolioInteraction } from "@/utils/analytics";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    // Initialize scroll tracking
+    const cleanup = trackScrollDepth();
+    
+    // Track initial page view
+    trackPortfolioInteraction.workSectionView();
+    
+    // Cleanup on unmount
+    return cleanup;
+  }, []);
+
   return (
     <main className="min-h-screen">
       {/* Hero background image */}
@@ -61,6 +75,7 @@ export default function Home() {
       <ToolsSection />
       <ContactSection />
       <Footer />
+      <AnalyticsDashboard />
     </main>
   );
 }

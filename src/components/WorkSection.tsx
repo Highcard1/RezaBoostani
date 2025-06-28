@@ -1,6 +1,15 @@
 import Image from "next/image";
+import { trackPortfolioInteraction } from "@/utils/analytics";
 
 export default function WorkSection() {
+  const handleProjectClick = (projectName: string) => {
+    trackPortfolioInteraction.projectClick(projectName);
+  };
+
+  const handleExternalLinkClick = (linkType: string) => {
+    trackPortfolioInteraction.externalLinkClick(linkType);
+  };
+
   const projects = [
     {
       role: "Lead Product Manager",
@@ -127,7 +136,7 @@ export default function WorkSection() {
                     <div className="lg:col-span-2 space-y-4 sm:space-y-6">
                       {/* Watt Share Logo and URL */}
                       {project.logo && project.url && (
-                        <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 mb-4 sm:mb-8">
+                        <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 mb-4 sm:mb-8" onClick={() => handleProjectClick(project.title || 'Watt Share')}>
                           <Image
                             src={project.logo}
                             alt={project.title + ' Logo'}
@@ -135,13 +144,13 @@ export default function WorkSection() {
                             height={120}
                             className="w-20 h-20 sm:w-32 sm:h-32 object-contain"
                           />
-                          <span className="text-sm sm:text-lg font-semibold text-green-600 hover:underline">{project.url.replace('https://', '')}</span>
+                          <span className="text-sm sm:text-lg font-semibold text-green-600 hover:underline" onClick={(e) => { e.stopPropagation(); handleExternalLinkClick(project.url.replace('https://', '')); }}>{project.url.replace('https://', '')}</span>
                         </a>
                       )}
                       
                       {/* URL only (for projects without logos) */}
                       {!project.logo && project.url && (
-                        <a href={project.url} target="_blank" rel="noopener noreferrer" className="inline-block mb-4 sm:mb-8">
+                        <a href={project.url} target="_blank" rel="noopener noreferrer" className="inline-block mb-4 sm:mb-8" onClick={(e) => { e.stopPropagation(); handleExternalLinkClick(project.url.replace('https://', '')); }}>
                           <span className="text-sm sm:text-lg font-semibold text-blue-600 hover:underline">{project.url.replace('https://', '')}</span>
                         </a>
                       )}
