@@ -262,6 +262,18 @@ export default function WorkSection() {
                           />
                         </div>
                       )}
+                      
+                      {/* Practice Story Button */}
+                      <div className="mt-4 sm:mt-6">
+                        <a
+                          href={`/case-studies/${project.title?.toLowerCase().replace(/\s+/g, '-') || 'watt-share'}`}
+                          onClick={() => handleProjectClick(`${project.title || 'Watt Share'} Case Study`)}
+                          className="inline-flex items-center justify-center w-full px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-sm sm:text-base font-medium rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                        >
+                          <span className="mr-2 text-yellow-300 "> One</span>
+                          {project.title || 'Sprint Planing'} Story 
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
