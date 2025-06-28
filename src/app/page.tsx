@@ -1,3 +1,5 @@
+"use client";
+
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
@@ -6,13 +8,26 @@ import WorkSection from "@/components/WorkSection";
 import ToolsSection from "@/components/ToolsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
-import Image from "next/image";
+import AnalyticsDashboard from "@/components/AnalyticsDashboard";
+import { trackScrollDepth, trackPortfolioInteraction } from "@/utils/analytics";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    // Initialize scroll tracking
+    const cleanup = trackScrollDepth();
+    
+    // Track initial page view
+    trackPortfolioInteraction.workSectionView();
+    
+    // Cleanup on unmount
+    return cleanup;
+  }, []);
+
   return (
     <main className="min-h-screen">
       {/* Hero background image */}
-      <div className="relative w-full min-h-[500px]">
+      <div className="relative w-full min-h-[400px] sm:min-h-[500px]">
         <div className="absolute inset-0 w-full h-full z-0">
           <img
             src="/pexels-daniel-andraski-197681005-11554666.jpg"
@@ -26,53 +41,41 @@ export default function Home() {
         </div>
       </div>
       <Header />
-<<<<<<< HEAD
+      
+      <AboutSection />
+      <EducationSection />
       
       {/* Hero Section */}
-      <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+      <section id="home" className="pt-16 sm:pt-20 pb-12 sm:pb-16 px-2 sm:px-4 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
-            <h1 className="text-4xl sm:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
               Product thinker!!!. Builder.{" "}
               <span className="text-blue-600 dark:text-blue-400">EV innovator.</span>
             </h1>
-            <p className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto">
               Driving user-centric products from idea to launch—on web, mobile, and the road.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <a
                 href="#work"
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 sm:py-3 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base"
               >
                 See My Work
               </a>
               <a
                 href="#contact"
-                className="border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 px-8 py-3 rounded-lg font-medium transition-colors duration-200"
+                className="border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 px-6 sm:px-8 py-3 sm:py-3 rounded-lg font-medium transition-colors duration-200 text-sm sm:text-base"
               >
-                Let's Connect
+                Let&apos;s Connect
               </a>
             </div>
           </div>
-=======
-      <AboutSection />
-      <EducationSection />
-
-      {/* Watt Share full-width background */}
-      <div className="relative w-full">
-        <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
-          <img
-            src="/pexels-raimundo-campbell-2149207419-30479291.jpg"
-            alt="Watt Share Background"
-            className="w-full h-full object-cover object-center opacity-60"
-          />
-          <div className="absolute inset-0 w-full h-full bg-white/70" />
->>>>>>> main
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
           {/* Only render the first project (Watt Share) from WorkSection here, refactor WorkSection if needed */}
         </div>
-      </div>
+      </section>
 
       {/* Ivy Charging full-width background */}
       <div className="relative w-full">
@@ -84,7 +87,7 @@ export default function Home() {
           />
           <div className="absolute inset-0 w-full h-full bg-white/70" />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
           {/* Only render the second project (Ivy Charging) from WorkSection here, refactor WorkSection if needed */}
         </div>
       </div>
@@ -94,6 +97,7 @@ export default function Home() {
       <ToolsSection />
       <ContactSection />
       <Footer />
+      <AnalyticsDashboard />
     </main>
   );
 }

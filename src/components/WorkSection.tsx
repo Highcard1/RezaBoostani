@@ -1,6 +1,15 @@
 import Image from "next/image";
+import { trackPortfolioInteraction } from "@/utils/analytics";
 
 export default function WorkSection() {
+  const handleProjectClick = (projectName: string) => {
+    trackPortfolioInteraction.projectClick(projectName);
+  };
+
+  const handleExternalLinkClick = (linkType: string) => {
+    trackPortfolioInteraction.externalLinkClick(linkType);
+  };
+
   const projects = [
     {
       role: "Lead Product Manager",
@@ -101,7 +110,7 @@ export default function WorkSection() {
             <div key={index} className="relative w-full">
               {/* Vertical image strip for Watt Share, Ivy Charging, and ThunderVolt */}
               {(index === 0 || index === 1 || index === 2) && (
-                <div className="absolute top-0 right-0 h-full w-16 z-10 rounded-r-xl overflow-hidden shadow-md">
+                <div className="absolute top-0 right-0 h-full w-8 sm:w-12 md:w-16 z-10 rounded-r-xl overflow-hidden shadow-md">
                   <img
                     src={
                       index === 0
@@ -121,67 +130,66 @@ export default function WorkSection() {
                   />
                 </div>
               )}
-              <div className="relative z-0 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className={`rounded-xl p-8 shadow-lg bg-white/90 backdrop-blur-md ${index === 0 || index === 1 || index === 2 ? 'pr-24 sm:pr-20' : ''}`}>
-                  <div className="grid lg:grid-cols-3 gap-8">
-                    <div className="lg:col-span-2 space-y-6">
+              <div className="relative z-0 max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+                <div className={`rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg bg-white/90 backdrop-blur-md ${index === 0 || index === 1 || index === 2 ? 'pr-12 sm:pr-16 md:pr-20 lg:pr-24' : ''}`}>
+                  <div className="grid lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+                    <div className="lg:col-span-2 space-y-4 sm:space-y-6">
                       {/* Watt Share Logo and URL */}
                       {project.logo && project.url && (
-                        <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 mb-8">
+                        <a href={project.url} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 mb-4 sm:mb-8" onClick={() => handleProjectClick(project.title || 'Watt Share')}>
                           <Image
                             src={project.logo}
                             alt={project.title + ' Logo'}
                             width={120}
                             height={120}
-                            className="w-32 h-32 object-contain"
+                            className="w-20 h-20 sm:w-32 sm:h-32 object-contain"
                           />
-                          <span className="text-lg font-semibold text-green-600 hover:underline">{project.url.replace('https://', '')}</span>
+                          <span className="text-sm sm:text-lg font-semibold text-green-600 hover:underline" onClick={(e) => { e.stopPropagation(); handleExternalLinkClick(project.url.replace('https://', '')); }}>{project.url.replace('https://', '')}</span>
                         </a>
                       )}
                       
                       {/* URL only (for projects without logos) */}
                       {!project.logo && project.url && (
-                        <a href={project.url} target="_blank" rel="noopener noreferrer" className="inline-block mb-8">
-                          <span className="text-lg font-semibold text-blue-600 hover:underline">{project.url.replace('https://', '')}</span>
+                        <a href={project.url} target="_blank" rel="noopener noreferrer" className="inline-block mb-4 sm:mb-8" onClick={(e) => { e.stopPropagation(); handleExternalLinkClick(project.url.replace('https://', '')); }}>
+                          <span className="text-sm sm:text-lg font-semibold text-blue-600 hover:underline">{project.url.replace('https://', '')}</span>
                         </a>
                       )}
-                      <div className="flex items-center gap-4 mb-6">
-                        <h3 className="text-2xl font-bold">{project.title}</h3>
-                        <span className={`px-3 py-1 ${project.roleColor} text-sm rounded-full font-medium`}>
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-4 sm:mb-6">
+                        <h3 className="text-lg sm:text-xl lg:text-2xl font-bold">{project.title}</h3>
+                        <span className={`px-2 sm:px-3 py-1 ${project.roleColor} text-xs sm:text-sm rounded-full font-medium`}>
                           {project.role}
                         </span>
-                        <span className="text-sm">{project.timeline}</span>
+                        <span className="text-xs sm:text-sm">{project.timeline}</span>
                       </div>
                       
                       <div>
-                        {/* <h4 className="font-semibold mb-2 text-lg">The Problem</h4> */}
-                        <p>{project.problem}</p>
+                        <p className="text-sm sm:text-base">{project.problem}</p>
                       </div>
                       
                       <div>
-                        <h4 className="font-semibold mb-2 text-lg">What I Did</h4>
-                        <p>{project.whatIDid}</p>
+                        <h4 className="font-semibold mb-2 text-base sm:text-lg">What I Did</h4>
+                        <p className="text-sm sm:text-base">{project.whatIDid}</p>
                       </div>
                       
-                      <div className="grid md:grid-cols-2 gap-6">
+                      <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
                         <div>
-                          <h4 className="font-semibold mb-3">Key Challenges</h4>
-                          <ul className="space-y-2">
+                          <h4 className="font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Key Challenges</h4>
+                          <ul className="space-y-1 sm:space-y-2">
                             {project.challenges.map((challenge, i) => (
                               <li key={i} className="flex items-start gap-2">
-                                <span className="w-1.5 h-1.5 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                                <span className="text-sm">{challenge}</span>
+                                <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-red-500 rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></span>
+                                <span className="text-xs sm:text-sm">{challenge}</span>
                               </li>
                             ))}
                           </ul>
                         </div>
                         <div>
-                          <h4 className="font-semibold mb-3">How I Solved Them</h4>
-                          <ul className="space-y-2">
+                          <h4 className="font-semibold mb-2 sm:mb-3 text-sm sm:text-base">How I Solved Them</h4>
+                          <ul className="space-y-1 sm:space-y-2">
                             {project.solutions.map((solution, i) => (
                               <li key={i} className="flex items-start gap-2">
-                                <span className="w-1.5 h-1.5 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
-                                <span className="text-sm">{solution}</span>
+                                <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-green-500 rounded-full mt-1.5 sm:mt-2 flex-shrink-0"></span>
+                                <span className="text-xs sm:text-sm">{solution}</span>
                               </li>
                             ))}
                           </ul>
@@ -189,14 +197,14 @@ export default function WorkSection() {
                       </div>
                     </div>
                     
-                    <div className="space-y-6">
+                    <div className="space-y-4 sm:space-y-6">
                       <div>
-                        <h4 className="font-semibold mb-3">Impact & Results</h4>
-                        <div className="space-y-2">
+                        <h4 className="font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Impact & Results</h4>
+                        <div className="space-y-1 sm:space-y-2">
                           {project.impact.map((result, i) => (
                             <div key={i} className="flex items-center gap-2">
-                              <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                              <span className="text-sm">{result}</span>
+                              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-blue-600 rounded-full"></span>
+                              <span className="text-xs sm:text-sm">{result}</span>
                             </div>
                           ))}
                         </div>
@@ -204,10 +212,10 @@ export default function WorkSection() {
                       
                       {project.techStack && (
                         <div>
-                          <h4 className="font-semibold mb-3">Tech Stack</h4>
-                          <div className="flex flex-wrap gap-2">
+                          <h4 className="font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Tech Stack</h4>
+                          <div className="flex flex-wrap gap-1 sm:gap-2">
                             {project.techStack.map((tech) => (
-                              <span key={tech} className="px-3 py-1 bg-blue-100 text-blue-800 text-sm rounded-full">
+                              <span key={tech} className="px-2 sm:px-3 py-1 bg-blue-100 text-blue-800 text-xs sm:text-sm rounded-full">
                                 {tech}
                               </span>
                             ))}
@@ -217,10 +225,10 @@ export default function WorkSection() {
                       
                       {project.focusAreas && (
                         <div>
-                          <h4 className="font-semibold mb-3">Focus Areas</h4>
-                          <div className="flex flex-wrap gap-2">
+                          <h4 className="font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Focus Areas</h4>
+                          <div className="flex flex-wrap gap-1 sm:gap-2">
                             {project.focusAreas.map((area) => (
-                              <span key={area} className="px-3 py-1 bg-green-100 text-green-800 text-sm rounded-full">
+                              <span key={area} className="px-2 sm:px-3 py-1 bg-green-100 text-green-800 text-xs sm:text-sm rounded-full">
                                 {area}
                               </span>
                             ))}
@@ -230,12 +238,12 @@ export default function WorkSection() {
                       
                       {project.achievements && (
                         <div>
-                          <h4 className="font-semibold mb-3">Key Achievements</h4>
-                          <div className="space-y-2">
+                          <h4 className="font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Key Achievements</h4>
+                          <div className="space-y-1 sm:space-y-2">
                             {project.achievements.map((achievement) => (
                               <div key={achievement} className="flex items-center gap-2">
-                                <span className="w-2 h-2 bg-purple-600 rounded-full"></span>
-                                <span className="text-sm">{achievement}</span>
+                                <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-purple-600 rounded-full"></span>
+                                <span className="text-xs sm:text-sm">{achievement}</span>
                               </div>
                             ))}
                           </div>
@@ -244,7 +252,7 @@ export default function WorkSection() {
                       
                       {/* ThunderVolt Image - placed in right sidebar */}
                       {project.title === "ThunderVolt" && project.images && (
-                        <div className="mt-6">
+                        <div className="mt-4 sm:mt-6">
                           <Image
                             src={project.images[0]}
                             alt="ThunderVolt project screenshot by Reza Boostani"
