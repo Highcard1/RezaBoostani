@@ -4,12 +4,6 @@ import { useEffect, useState } from 'react';
 
 export default function AnalyticsDashboard() {
   const [isVisible, setIsVisible] = useState(false);
-  const [analyticsData, setAnalyticsData] = useState({
-    pageViews: 0,
-    uniqueVisitors: 0,
-    topPages: [],
-    recentEvents: []
-  });
 
   useEffect(() => {
     // Only show in development

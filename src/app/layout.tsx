@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Tomorrow } from "next/font/google";
 import "./globals.css";
 import Head from 'next/head';
+import Script from 'next/script';
 
 const tomorrow = Tomorrow({
   weight: ["400", "700"],
@@ -116,8 +117,13 @@ export default function RootLayout({
         <meta name="theme-color" content="#2563eb" />
         
         {/* Google Analytics */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4EJCV66F7N"></script>
-        <script
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4EJCV66F7N"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
