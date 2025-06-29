@@ -33,7 +33,7 @@ export default function WattShareCaseStudy() {
               WattShare Practice Story
             </h1>
             <p className="text-xl sm:text-2xl max-w-3xl mx-auto opacity-90">
-              Building a peer-to-peer EV charging platform from concept to launch
+              Brief Summary of Sprint Jan, 2025 Web Application V 1.2.0, at the time of writing this summary Watt Share has released Web Application V 1.4.2 
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <span className="px-4 py-2 bg-white/20 rounded-full text-sm">Product Management</span>
