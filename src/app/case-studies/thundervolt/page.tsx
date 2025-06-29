@@ -191,9 +191,9 @@ export default function ThunderVoltCaseStudy() {
             </div>
             
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
-              <h3 className="text-xl font-semibold text-blue-800 mb-4">ThunderVolt's Strategic Product Vision</h3>
+              <h3 className="text-xl font-semibold text-blue-800 mb-4">ThunderVolt&apos;s Strategic Product Vision</h3>
               <blockquote className="text-lg text-blue-700 italic mb-6">
-                "To liberate every urban electric vehicle owner from the constraints of charging infrastructure by delivering an intelligent, personal, and effortlessly portable power ecosystem, ensuring unparalleled convenience, absolute freedom from range anxiety, and a seamless integration into their modern, time-conscious lifestyle."
+                &quot;To liberate every urban electric vehicle owner from the constraints of charging infrastructure by delivering an intelligent, personal, and effortlessly portable power ecosystem, ensuring unparalleled convenience, absolute freedom from range anxiety, and a seamless integration into their modern, time-conscious lifestyle.&quot;
               </blockquote>
             </div>
             
