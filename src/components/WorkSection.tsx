@@ -126,8 +126,9 @@ export default function WorkSection() {
                         ? "Ivy Charging Accent"
                         : "ThunderVolt Accent"
                     }
-                    width={64}
-                    height={400}
+                    width={256}
+                    height={1600}
+                    quality={95}
                     className="w-full h-full object-cover object-center opacity-90"
                   />
                 </div>

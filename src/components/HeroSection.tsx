@@ -8,8 +8,9 @@ export default function HeroSection() {
         <Image
           src="/pexels-daniel-andraski-197681005-11554666.jpg"
           alt="Background"
-          width={1920}
-          height={1080}
+          width={3840}
+          height={2160}
+          quality={90}
           className="w-full h-full object-cover object-center opacity-5"
         />
         <div className="absolute inset-0 w-full h-full bg-white/70 " />
@@ -49,8 +50,9 @@ export default function HeroSection() {
             <Image
               src={"/20250627_150331-Copy.jpg"}
               alt="Reza Boostani - Product Manager and Technical Builder based in Toronto, specializing in EV charging and sustainable technology"
-              width={400}
-              height={480}
+              width={800}
+              height={960}
+              quality={95}
               className="w-80 h-96 sm:w-100 sm:h-120 rounded border-white border-4 object-cover border-0 border-gray-200 shadow-lg"
               priority
             />

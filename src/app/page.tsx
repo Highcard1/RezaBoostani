@@ -33,8 +33,9 @@ export default function Home() {
           <Image
             src="/pexels-daniel-andraski-197681005-11554666.jpg"
             alt="Background"
-            width={1920}
-            height={1080}
+            width={3840}
+            height={2160}
+            quality={90}
             className="w-full h-full object-cover object-center opacity-60"
           />
           {/* Overlay removed for debugging */}
@@ -57,8 +58,9 @@ export default function Home() {
           <Image
             src="/pexels-hyundaimotorgroup-30658213.jpg"
             alt="Ivy Charging Background"
-            width={1920}
-            height={1080}
+            width={3840}
+            height={2160}
+            quality={90}
             className="w-full h-full object-cover object-center opacity-60"
           />
           <div className="absolute inset-0 w-full h-full bg-white/70" />

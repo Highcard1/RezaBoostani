@@ -18,8 +18,9 @@ const ImageModal: React.FC<ImageModalProps> = ({ src, alt, caption, className })
         <Image
           src={src}
           alt={alt}
-          width={320}
-          height={200}
+          width={640}
+          height={400}
+          quality={95}
           className="rounded-lg shadow-md object-cover w-full max-w-[220px] h-auto max-h-[140px] sm:max-w-[320px] sm:max-h-[200px] transition-transform duration-200 hover:scale-105"
         />
         {caption && <div className="text-xs text-center text-gray-500 mt-1">{caption}</div>}
@@ -44,8 +45,9 @@ const ImageModal: React.FC<ImageModalProps> = ({ src, alt, caption, className })
             <Image
               src={src}
               alt={alt}
-              width={1200}
-              height={800}
+              width={2400}
+              height={1600}
+              quality={95}
               className="rounded-lg object-contain max-w-[90vw] max-h-[80vh]"
             />
             {caption && <div className="text-sm text-center text-gray-700 mt-2 mb-2 px-2">{caption}</div>}

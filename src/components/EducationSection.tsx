@@ -21,8 +21,9 @@ export default function EducationSection() {
               <Image
                 src="/20180706-152629-McMaster-University-Campus-0004-1.jpg"
                 alt="Formal Education Accent"
-                width={64}
-                height={400}
+                width={256}
+                height={1600}
+                quality={95}
                 className="w-full h-full object-cover object-center opacity-90"
               />
             </div>
@@ -51,8 +52,9 @@ export default function EducationSection() {
               <Image
                 src="/computer-8779040_1280.jpg"
                 alt="Skill Boosters Accent"
-                width={64}
-                height={400}
+                width={256}
+                height={1600}
+                quality={95}
                 className="w-full h-full object-cover object-center opacity-90"
               />
             </div>
@@ -168,8 +170,9 @@ export default function EducationSection() {
               <Image
                 src="/apps-426559_1280.jpg"
                 alt="AI, Cloud & Marketing Tech Accent"
-                width={64}
-                height={400}
+                width={256}
+                height={1600}
+                quality={95}
                 className="w-full h-full object-cover object-center opacity-90"
               />
             </div>
