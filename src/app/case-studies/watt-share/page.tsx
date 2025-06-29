@@ -33,7 +33,7 @@ export default function WattShareCaseStudy() {
               WattShare Practice Story
             </h1>
             <p className="text-xl sm:text-2xl max-w-3xl mx-auto opacity-90">
-              Brief Summary of Sprint Jan, 2025 Web Application V 1.2.0, at the time of writing this summary Watt Share has released Web Application V 1.4.2 
+            Brief Summary of Sprint – January 2025, Web Application V1.0. As of the time of writing this summary, Watt Share has released Web Application V1.4.2.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <span className="px-4 py-2 bg-white/20 rounded-full text-sm">Product Management</span>
@@ -66,7 +66,7 @@ export default function WattShareCaseStudy() {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-purple-600">100%</div>
-                <div className="text-sm text-gray-600">MVP Launch</div>
+                <div className="text-sm text-gray-600">MVP & Beta Launch</div>
               </div>
             </div>
           </div>
@@ -107,9 +107,9 @@ export default function WattShareCaseStudy() {
               <div>
                 <h4 className="font-semibold text-gray-800 mb-3">Qualitative Research</h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• 25+ user interviews with EV owners</li>
+                  <li>• 20+ user interviews with EV owners</li>
                   <li>• 15+ interviews with potential renters</li>
-                  <li>• 10+ property manager discussions</li>
+                  <li>• 5+ property manager discussions</li>
                   <li>• 5+ utility company consultations</li>
                 </ul>
               </div>
@@ -131,15 +131,14 @@ export default function WattShareCaseStudy() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Technical Implementation</h2>
           <div className="space-y-6">
             <div className="bg-white rounded-xl p-6 shadow-lg">
-              <h3 className="text-xl font-semibold mb-4">Architecture Decisions</h3>
+              <h3 className="text-xl font-semibold mb-4">Architecture Design Factors </h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Frontend</h4>
-                  <p className="text-gray-600">Next.js for SEO and performance, TypeScript for type safety, Tailwind CSS for rapid development</p>
+                  <h4 className="font-semibold text-gray-800 mb-2"></h4>
+                  <p className="text-gray-600">High performance, highly scalable, security protocols,  large Dev community support, DevOps & AI friendly for rapid development in production.</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800 mb-2">Backend</h4>
-                  <p className="text-gray-600">Supabase for database and authentication, WebSockets for real-time booking, Stripe for payments</p>
+                  <p className="text-gray-600">Code reusability, WebSockets for Real-time booking, highly contollable payments and userflow.</p>
                 </div>
               </div>
             </div>
@@ -153,13 +152,39 @@ export default function WattShareCaseStudy() {
                 </div>
                 <div className="border-l-4 border-green-400 pl-4">
                   <h4 className="font-semibold text-gray-800">Payment Integration</h4>
-                  <p className="text-gray-600">Built secure payment flow with Stripe, handling escrow and automatic payouts to charger owners</p>
+                  <p className="text-gray-600">Built secure payment flow, handling escrow and automatic payouts to charger owners</p>
                 </div>
                 <div className="border-l-4 border-blue-400 pl-4">
                   <h4 className="font-semibold text-gray-800">Trust & Safety</h4>
                   <p className="text-gray-600">Implemented user verification, insurance integration, and dispute resolution system</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Product Demo */}
+        <section className="mb-16">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Product Demo</h2>
+          <div className="bg-white rounded-xl p-6 shadow-lg">
+            <h3 className="text-xl font-semibold mb-4">WattShare Web Application Demo</h3>
+            <p className="text-gray-600 mb-6">
+              Watch this brief demo of the WattShare platform showcasing the user experience, booking flow, and key features that make peer-to-peer EV charging accessible and convenient.
+            </p>
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/HcpLd4Wfl_4"
+                title="WattShare Product Demo"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              ></iframe>
+            </div>
+            <div className="mt-4 text-center">
+              <p className="text-sm text-gray-500">
+                Demo showcases: User registration, charger discovery, booking flow, payment processing, and real-time availability
+              </p>
             </div>
           </div>
         </section>
@@ -176,7 +201,7 @@ export default function WattShareCaseStudy() {
                   <li>• Charger listing and discovery</li>
                   <li>• Real-time booking system</li>
                   <li>• Payment processing</li>
-                  <li>• Basic messaging between users</li>
+                  <li>• In app messaging between users</li>
                 </ul>
               </div>
               
@@ -185,15 +210,15 @@ export default function WattShareCaseStudy() {
                 <div className="grid md:grid-cols-3 gap-4">
                   <div className="p-4 bg-blue-50 rounded-lg">
                     <h4 className="font-semibold text-blue-800">Phase 2</h4>
-                    <p className="text-sm text-blue-600">Advanced scheduling, bulk bookings, API integrations</p>
+                    <p className="text-sm text-blue-600">Advanced scheduling, bulk bookings, API integrations, EV charging matchmaking, and AI integration.(Achieved)</p>
                   </div>
                   <div className="p-4 bg-green-50 rounded-lg">
                     <h4 className="font-semibold text-green-800">Phase 3</h4>
-                    <p className="text-sm text-green-600">Mobile app, smart charger integration, analytics</p>
+                    <p className="text-sm text-green-600"> smart charger integration, analytics(Achieved)</p>
                   </div>
                   <div className="p-4 bg-purple-50 rounded-lg">
                     <h4 className="font-semibold text-purple-800">Phase 4</h4>
-                    <p className="text-sm text-purple-600">Enterprise features, white-label solutions</p>
+                    <p className="text-sm text-purple-600">Enterprise features, white-label solutions, Mobile/Carplay</p>
                   </div>
                 </div>
               </div>
@@ -211,7 +236,8 @@ export default function WattShareCaseStudy() {
                 <h4 className="font-semibold text-green-700 mb-2">Development Metrics</h4>
                 <ul className="space-y-1 text-green-600">
                   <li>• 40% reduction in development costs</li>
-                  <li>• MVP launched in 6 months</li>
+                  <li>• MVP & Pilot launched in 6 months</li>
+                  <li>• Beta launched</li>
                   <li>• 50+ beta users onboarded</li>
                   <li>• Zero critical bugs in production</li>
                 </ul>
@@ -222,7 +248,7 @@ export default function WattShareCaseStudy() {
                   <li>• Early-stage funding secured</li>
                   <li>• 70% user satisfaction score</li>
                   <li>• 85% booking completion rate</li>
-                  <li>• 3.5 average user rating</li>
+                  <li></li>
                 </ul>
               </div>
             </div>
