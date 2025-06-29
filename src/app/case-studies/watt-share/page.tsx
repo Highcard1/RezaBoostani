@@ -308,7 +308,7 @@ export default function WattShareCaseStudy() {
             <div className="grid md:grid-cols-2 gap-6 items-center">
               <div>
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                  Our product, "ChargeNow," aims to be the leading platform for electric vehicle (EV) owners to find, reserve, and pay for charging spots. 
+                  Our product, &quot;ChargeNow,&quot; aims to be the leading platform for electric vehicle (EV) owners to find, reserve, and pay for charging spots. 
                   In a rapidly evolving market, user experience is paramount.
                 </p>
                 <p className="text-gray-600 mb-4">

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
@@ -29,9 +30,11 @@ export default function Home() {
       {/* Hero background image */}
       <div className="relative w-full min-h-[400px] sm:min-h-[500px]">
         <div className="absolute inset-0 w-full h-full z-0">
-          <img
+          <Image
             src="/pexels-daniel-andraski-197681005-11554666.jpg"
             alt="Background"
+            width={1920}
+            height={1080}
             className="w-full h-full object-cover object-center opacity-60"
           />
           {/* Overlay removed for debugging */}
@@ -51,9 +54,11 @@ export default function Home() {
       {/* Ivy Charging full-width background */}
       <div className="relative w-full">
         <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
-          <img
+          <Image
             src="/pexels-hyundaimotorgroup-30658213.jpg"
             alt="Ivy Charging Background"
+            width={1920}
+            height={1080}
             className="w-full h-full object-cover object-center opacity-60"
           />
           <div className="absolute inset-0 w-full h-full bg-white/70" />
