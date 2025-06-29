@@ -58,16 +58,13 @@ export default function ThunderVoltCaseStudy() {
             </p>
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">100 Km</div>
-                <div className="text-sm text-gray-600">Twin Package Range</div>
+
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600">$259.99</div>
-                <div className="text-sm text-gray-600">Monthly Subscription</div>
+
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-600">1,000+</div>
-                <div className="text-sm text-gray-600">Target Customers</div>
+
               </div>
             </div>
           </div>
@@ -506,9 +503,7 @@ export default function ThunderVoltCaseStudy() {
         <section className="text-center">
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8">
             <h2 className="text-2xl font-bold mb-4"></h2>
-            <p className="text-lg mb-6 opacity-90">
-              Let&apos;s discuss how we can develop comprehensive product strategies and roadmaps for your next innovation
-            </p>
+       
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/#contact"

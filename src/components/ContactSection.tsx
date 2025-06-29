@@ -12,7 +12,7 @@ export default function ContactSection() {
           Have an idea or just want to talk shop?
         </h2>
         <p className="text-base sm:text-lg mb-6 sm:mb-8">
-          I&apos;m open to collaborations, questions, or coffee. Let&apos;s build something bold together.
+          I&apos;m open to collaborations, questions, or coffee.
         </p>
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
           <a
