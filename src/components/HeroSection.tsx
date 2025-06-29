@@ -1,11 +1,15 @@
+import Image from "next/image";
+
 export default function HeroSection() {
   return (
     <section id="home" className=" relative pt-16 sm:pt-20 pb-12 sm:pb-16 px-0 sm:px-0 lg:px-0 bg-white  overflow-hidden w-full">
       {/* Full-width background image */}
       <div className=" absolute inset-0 w-full h-full z-0">
-        <img
+        <Image
           src="/pexels-daniel-andraski-197681005-11554666.jpg"
           alt="Background"
+          width={1920}
+          height={1080}
           className="w-full h-full object-cover object-center opacity-5"
         />
         <div className="absolute inset-0 w-full h-full bg-white/70 " />
@@ -42,11 +46,13 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="flex-1 flex rounded justify-center lg:justify-end">
-            <img
+            <Image
               src={"/20250627_150331-Copy.jpg"}
               alt="Reza Boostani - Product Manager and Technical Builder based in Toronto, specializing in EV charging and sustainable technology"
+              width={400}
+              height={480}
               className="w-80 h-96 sm:w-100 sm:h-120 rounded border-white border-4 object-cover border-0 border-gray-200 shadow-lg"
-              loading="eager"
+              priority
             />
           </div>
         </div>

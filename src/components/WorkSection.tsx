@@ -111,7 +111,7 @@ export default function WorkSection() {
               {/* Vertical image strip for Watt Share, Ivy Charging, and ThunderVolt */}
               {(index === 0 || index === 1 || index === 2) && (
                 <div className="absolute top-0 right-0 h-full w-8 sm:w-12 md:w-16 z-10 rounded-r-xl overflow-hidden shadow-md">
-                  <img
+                  <Image
                     src={
                       index === 0
                         ? "/pexels-raimundo-campbell-2149207419-30479291.jpg"
@@ -126,6 +126,8 @@ export default function WorkSection() {
                         ? "Ivy Charging Accent"
                         : "ThunderVolt Accent"
                     }
+                    width={64}
+                    height={400}
                     className="w-full h-full object-cover object-center opacity-90"
                   />
                 </div>

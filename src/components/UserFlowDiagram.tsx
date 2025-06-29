@@ -138,7 +138,7 @@ const UserFlowDiagram: React.FC = () => {
                       {/* List Space */}
                       <div className="flow-step decision">
                         <div className="step-id">L</div>
-                        <div className="step-label">Navigate to "List Your Space"</div>
+                        <div className="step-label">Navigate to &quot;List Your Space&quot;</div>
                       </div>
                       
                       {/* Login Branch */}

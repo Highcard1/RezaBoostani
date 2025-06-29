@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaUniversity, FaAward, FaMicrosoft, FaGoogle, FaPiedPiper } from "react-icons/fa";
 
 export default function EducationSection() {
@@ -17,9 +18,11 @@ export default function EducationSection() {
           <div className="relative">
             {/* Vertical image strip for Formal Education */}
             <div className="absolute top-0 right-0 h-full w-8 sm:w-12 md:w-16 z-10 rounded-r-xl overflow-hidden shadow-md">
-              <img
+              <Image
                 src="/20180706-152629-McMaster-University-Campus-0004-1.jpg"
                 alt="Formal Education Accent"
+                width={64}
+                height={400}
                 className="w-full h-full object-cover object-center opacity-90"
               />
             </div>
@@ -45,9 +48,11 @@ export default function EducationSection() {
           <div className="relative">
             {/* Vertical image strip for Skill Boosters */}
             <div className="absolute top-0 right-0 h-full w-8 sm:w-12 md:w-16 z-10 rounded-r-xl overflow-hidden shadow-md">
-              <img
+              <Image
                 src="/computer-8779040_1280.jpg"
                 alt="Skill Boosters Accent"
+                width={64}
+                height={400}
                 className="w-full h-full object-cover object-center opacity-90"
               />
             </div>
@@ -160,9 +165,11 @@ export default function EducationSection() {
           <div className="relative">
             {/* Vertical image strip for AI, Cloud & Marketing Tech */}
             <div className="absolute top-0 right-0 h-full w-8 sm:w-12 md:w-16 z-10 rounded-r-xl overflow-hidden shadow-md">
-              <img
+              <Image
                 src="/apps-426559_1280.jpg"
                 alt="AI, Cloud & Marketing Tech Accent"
+                width={64}
+                height={400}
                 className="w-full h-full object-cover object-center opacity-90"
               />
             </div>
