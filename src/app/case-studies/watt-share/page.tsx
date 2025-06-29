@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import { trackEvent } from "@/utils/analytics";
+import UserFlowDiagram from "@/components/UserFlowDiagram";
+import ImageModal from "@/components/ImageModal";
 
 export default function WattShareCaseStudy() {
   useEffect(() => {
@@ -46,27 +48,27 @@ export default function WattShareCaseStudy() {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-4xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-12">
         
         {/* Executive Summary */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Executive Summary</h2>
-          <div className="bg-white rounded-xl p-6 shadow-lg">
-            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+        <section className="mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Executive Summary</h2>
+          <div className="bg-white rounded-xl p-3 sm:p-6 shadow-lg">
+            <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-4">
               WattShare emerged from a simple observation: EV owners had unused home chargers while neighbors and tenants lacked convenient charging options. This case study explores the journey from problem identification to MVP launch, covering user research, technical implementation, and strategic decision-making.
             </p>
-            <div className="grid md:grid-cols-3 gap-6 mt-8">
+            <div className="grid md:grid-cols-3 gap-4 sm:gap-6 mt-4 sm:mt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-green-600">50+</div>
-                <div className="text-sm text-gray-600">Beta Users</div>
+                <div className="text-2xl sm:text-3xl font-bold text-green-600">50+</div>
+                <div className="text-xs sm:text-sm text-gray-600">Beta Users</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">40%</div>
-                <div className="text-sm text-gray-600">Cost Reduction</div>
+                <div className="text-2xl sm:text-3xl font-bold text-blue-600">40%</div>
+                <div className="text-xs sm:text-sm text-gray-600">Cost Reduction</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-600">100%</div>
-                <div className="text-sm text-gray-600">MVP & Beta Launch</div>
+                <div className="text-2xl sm:text-3xl font-bold text-purple-600">100%</div>
+                <div className="text-xs sm:text-sm text-gray-600">MVP & Beta Launch</div>
               </div>
             </div>
           </div>
@@ -99,9 +101,9 @@ export default function WattShareCaseStudy() {
         </section>
 
         {/* User Research */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">User Research & Validation</h2>
-          <div className="bg-white rounded-xl p-6 shadow-lg">
+        <section className="mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">User Research & Validation</h2>
+          <div className="bg-white rounded-xl p-3 sm:p-6 shadow-lg">
             <h3 className="text-xl font-semibold mb-4">Research Methodology</h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
@@ -123,14 +125,15 @@ export default function WattShareCaseStudy() {
                 </ul>
               </div>
             </div>
+          
           </div>
         </section>
 
         {/* Technical Implementation */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Technical Implementation</h2>
+        <section className="mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Technical Implementation</h2>
           <div className="space-y-6">
-            <div className="bg-white rounded-xl p-6 shadow-lg">
+            <div className="bg-white rounded-xl p-3 sm:p-6 shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Architecture Design Factors </h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -141,9 +144,10 @@ export default function WattShareCaseStudy() {
                   <p className="text-gray-600">Code reusability, WebSockets for Real-time booking, highly contollable payments and userflow.</p>
                 </div>
               </div>
+          
             </div>
             
-            <div className="bg-white rounded-xl p-6 shadow-lg">
+            <div className="bg-white rounded-xl p-3 sm:p-6 shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Key Technical Challenges</h3>
               <div className="space-y-4">
                 <div className="border-l-4 border-yellow-400 pl-4">
@@ -159,6 +163,7 @@ export default function WattShareCaseStudy() {
                   <p className="text-gray-600">Implemented user verification, insurance integration, and dispute resolution system</p>
                 </div>
               </div>
+          
             </div>
           </div>
         </section>
@@ -256,10 +261,10 @@ export default function WattShareCaseStudy() {
         </section>
 
         {/* Lessons Learned */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">Lessons Learned</h2>
-          <div className="space-y-4">
-            <div className="bg-white rounded-xl p-6 shadow-lg">
+        <section className="mb-12 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">Lessons Learned</h2>
+          <div className="space-y-6">
+            <div className="bg-white rounded-xl p-3 sm:p-6 shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Key Takeaways</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
@@ -281,6 +286,7 @@ export default function WattShareCaseStudy() {
                   </ul>
                 </div>
               </div>
+            
             </div>
           </div>
         </section>
@@ -316,10 +322,8 @@ export default function WattShareCaseStudy() {
                 </ul>
               </div>
               <div className="text-center">
-                <div className="bg-gray-200 rounded-lg p-8 h-64 flex items-center justify-center">
-                  <span className="text-gray-500 text-lg">📊 User Journey Flow Diagram</span>
-                </div>
-                <p className="text-sm text-gray-500 mt-2">[Image: Current vs. Optimized User Flow]</p>
+                <UserFlowDiagram />
+                <p className="text-sm text-gray-500 mt-2">Interactive User Flow Visualization</p>
               </div>
             </div>
           </div>
@@ -328,12 +332,7 @@ export default function WattShareCaseStudy() {
           <div className="bg-white rounded-xl p-6 shadow-lg mb-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">The Sprint Goal: Streamlining Reservations & Boosting User Confidence</h3>
             <div className="grid md:grid-cols-2 gap-6 items-center">
-              <div className="text-center">
-                <div className="bg-blue-100 rounded-lg p-8 h-64 flex items-center justify-center">
-                  <span className="text-blue-600 text-lg">🎯 Sprint Objectives Dashboard</span>
-                </div>
-                <p className="text-sm text-gray-500 mt-2">[Image: Sprint Goals and KPIs]</p>
-              </div>
+          
               <div>
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
                   Our primary goal for this sprint was to streamline the reservation and payment process, making it more intuitive and transparent for users.
@@ -386,12 +385,7 @@ export default function WattShareCaseStudy() {
                     <li>• Edit functionality directly from gateway page</li>
                   </ul>
                 </div>
-                <div className="text-center">
-                  <div className="bg-blue-50 rounded-lg p-6 h-48 flex items-center justify-center">
-                    <span className="text-blue-600 text-lg">📱 Reservation Flow Screenshots</span>
-                  </div>
-                  <p className="text-sm text-gray-500 mt-2">[Image: Before/After Reservation UI]</p>
-                </div>
+            
               </div>
               <div className="mt-4 p-4 bg-green-50 rounded-lg">
                 <h5 className="font-semibold text-green-800 mb-2">Impact:</h5>
@@ -418,10 +412,8 @@ export default function WattShareCaseStudy() {
                   </ul>
                 </div>
                 <div className="text-center">
-                  <div className="bg-green-50 rounded-lg p-6 h-48 flex items-center justify-center">
-                    <span className="text-green-600 text-lg">🖼️ Charger Discovery UI</span>
-                  </div>
-                  <p className="text-sm text-gray-500 mt-2">[Image: Enhanced Charger Cards]</p>
+                
+                  <ImageModal src="/WattShare/ChargerDiscoveryCards.png" alt="Charger Discovery Cards" caption="Charger Discovery Cards UI" />
                 </div>
               </div>
               <div className="mt-4 p-4 bg-green-50 rounded-lg">
@@ -449,10 +441,8 @@ export default function WattShareCaseStudy() {
                   </ul>
                 </div>
                 <div className="text-center">
-                  <div className="bg-purple-50 rounded-lg p-6 h-48 flex items-center justify-center">
-                    <span className="text-purple-600 text-lg">💳 Payment Flow Optimization</span>
-                  </div>
-                  <p className="text-sm text-gray-500 mt-2">[Image: Flexible Payment Options]</p>
+                
+                  <ImageModal src="/WattShare/PaymentOptions.jpg" alt="Payment Options" caption="Payment Options: PayPal, Stripe, Apple Pay, Google Pay, etc." />
                 </div>
               </div>
               <div className="mt-4 p-4 bg-green-50 rounded-lg">
@@ -479,10 +469,8 @@ export default function WattShareCaseStudy() {
                   </ul>
                 </div>
                 <div className="text-center">
-                  <div className="bg-orange-50 rounded-lg p-6 h-48 flex items-center justify-center">
-                    <span className="text-orange-600 text-lg">⚙️ Technical Architecture</span>
-                  </div>
-                  <p className="text-sm text-gray-500 mt-2">[Image: System Architecture Diagram]</p>
+                
+                  <ImageModal src="/WattShare/SystemArchitecture.png" alt="System Architecture" caption="WattShare System Architecture" />
                 </div>
               </div>
               <div className="mt-4 p-4 bg-green-50 rounded-lg">
@@ -530,10 +518,8 @@ export default function WattShareCaseStudy() {
                 </div>
               </div>
               <div className="text-center">
-                <div className="bg-gray-100 rounded-lg p-6 h-64 flex items-center justify-center">
-                  <span className="text-gray-600 text-lg">📈 Sprint Velocity Chart</span>
-                </div>
-                <p className="text-sm text-gray-500 mt-2">[Image: Sprint Burndown Chart]</p>
+               
+                <ImageModal src="/WattShare/SprintBurnDown.png" alt="Sprint Burn Down" caption="Sprint Burn Down Chart" />
               </div>
             </div>
           </div>
@@ -563,12 +549,7 @@ export default function WattShareCaseStudy() {
                   </div>
                 </div>
               </div>
-              <div className="text-center">
-                <div className="bg-gray-100 rounded-lg p-6 h-64 flex items-center justify-center">
-                  <span className="text-gray-600 text-lg">📊 Performance Dashboard</span>
-                </div>
-                <p className="text-sm text-gray-500 mt-2">[Image: KPI Dashboard Screenshot]</p>
-              </div>
+         
             </div>
           </div>
 
