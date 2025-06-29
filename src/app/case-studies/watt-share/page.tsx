@@ -400,7 +400,7 @@ export default function WattShareCaseStudy() {
                 <div>
                   <h5 className="font-semibold text-gray-800 mb-2">User Problem:</h5>
                   <p className="text-gray-600 mb-4">
-                    The "Find Chargers" page lacked visual appeal with missing images, making it harder for users to quickly assess charging options. 
+                    The &quot;Find Chargers&quot; page lacked visual appeal with missing images, making it harder for users to quickly assess charging options. 
                     Users wanted more information about charger spots.
                   </p>
                   <h5 className="font-semibold text-gray-800 mb-2">Solution:</h5>
