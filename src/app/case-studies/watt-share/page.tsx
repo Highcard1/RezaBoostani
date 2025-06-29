@@ -557,7 +557,7 @@ export default function WattShareCaseStudy() {
         {/* Call to Action */}
         <section className="text-center">
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8">
-            <h2 className="text-2xl font-bold mb-4">I'm open to collaborations, questions, or coffee.</h2>
+            <h2 className="text-2xl font-bold mb-4">I&apos;m open to collaborations, questions, or coffee.</h2>
             <p className="text-lg mb-6 opacity-90">
               Let&apos;s discuss how we can bring your product vision to life
             </p>
