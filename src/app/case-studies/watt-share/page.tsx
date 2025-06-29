@@ -295,7 +295,7 @@ export default function WattShareCaseStudy() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Use Case Story: Enhancing the EV Charging Experience</h2>
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-blue-400 p-6 rounded-r-lg mb-8">
-            <h3 className="text-xl font-semibold text-blue-800 mb-4">A Product Manager's Sprint Narrative</h3>
+            <h3 className="text-xl font-semibold text-blue-800 mb-4">A Product Manager&apos;s Sprint Narrative</h3>
             <p className="text-blue-700">
               This detailed case study explores a comprehensive sprint focused on optimizing the electric vehicle charging journey, 
               demonstrating the practical application of agile principles in driving product excellence.
@@ -348,7 +348,7 @@ export default function WattShareCaseStudy() {
                   </div>
                   <div className="flex items-start">
                     <span className="mr-3 mt-1 text-green-500">✓</span>
-                    <span className="text-gray-700">Add "Do it later" options for flexibility</span>
+                    <span className="text-gray-700">&quot;Do it later&quot; options for flexibility</span>
                   </div>
                   <div className="flex items-start">
                     <span className="mr-3 mt-1 text-green-500">✓</span>
@@ -434,7 +434,7 @@ export default function WattShareCaseStudy() {
                   </p>
                   <h5 className="font-semibold text-gray-800 mb-2">Solution:</h5>
                   <ul className="space-y-2 text-gray-600">
-                    <li>• Implemented "Do it later" option for car information</li>
+                    <li>• Implemented &quot;Do it later&quot; option for car information</li>
                     <li>• Allowed direct payment completion</li>
                     <li>• Fixed registration routing issues</li>
                     <li>• Streamlined new user onboarding</li>
@@ -557,8 +557,8 @@ export default function WattShareCaseStudy() {
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8">
             <h3 className="text-2xl font-bold mb-4">Conclusion: The Product Manager as an Orchestrator of Value</h3>
             <p className="text-lg mb-4 opacity-90">
-              This sprint exemplifies the multifaceted role of a product manager in an agile environment. It's not just about writing tickets; 
-              it's about deeply understanding user problems, translating those into clear requirements, prioritizing relentlessly, 
+              This sprint exemplifies the multifaceted role of a product manager in an agile environment. It&apos;s not just about writing tickets; 
+              it&apos;s about deeply understanding user problems, translating those into clear requirements, prioritizing relentlessly, 
               fostering seamless collaboration across diverse teams, and constantly seeking ways to deliver incremental, measurable value.
             </p>
             <p className="opacity-90">
@@ -574,7 +574,7 @@ export default function WattShareCaseStudy() {
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8">
             <h2 className="text-2xl font-bold mb-4">Ready to Build Something Similar?</h2>
             <p className="text-lg mb-6 opacity-90">
-              Let's discuss how we can bring your product vision to life
+              Let&apos;s discuss how we can bring your product vision to life
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
