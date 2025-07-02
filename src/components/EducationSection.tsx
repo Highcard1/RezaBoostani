@@ -33,12 +33,13 @@ export default function EducationSection() {
             </div>
             <div className="ml-6 sm:ml-10 space-y-4 sm:space-y-6 border-l-4 border-blue-200 pl-4 sm:pl-6 pr-12 sm:pr-16 md:pr-20 lg:pr-24">
               <div>
-                <h4 className="text-lg sm:text-xl font-bold">McMaster University – MTEI</h4>
-                <p className="text-xs sm:text-sm italic mb-1">Master of Technology, Entrepreneurship and Innovation</p>
+                <h4 className="text-lg sm:text-xl font-bold">W Booth School of Engineering Practice and Technology, McMaster University</h4>
+                <p className="text-xs sm:text-sm italic mb-1">Master of Technology Entrepreneurship and Innovation - MTEI, Engineering
+</p>
                 <p className="text-xs sm:text-sm">The degree that laid the foundation for Reza&apos;s product thinking and business acumen. This program sparked his journey into the startup world and equipped him with tools to turn innovative ideas into market-ready solutions.</p>
               </div>
               <div>
-                <h4 className="text-lg sm:text-xl font-bold">Azad University – BSc.</h4>
+                <h4 className="text-lg sm:text-xl font-bold">Azad University (IAU) – BSc.</h4>
                 <p className="text-xs sm:text-sm italic mb-1">Where it all began—Reza&apos;s technical roots.</p>
                 <p className="text-xs sm:text-sm">Here, he learned to build software before he learned to build strategy.</p>
               </div>
