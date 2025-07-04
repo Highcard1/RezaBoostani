@@ -34,7 +34,7 @@ export default function WorkSection() {
         "Secured fund in early-stage",
         "Onboarded 50+ beta users"
       ],
-      techStack: ["Next.js", "PostgreSQL", "Supabase", "WebSockets", "Stripe"],
+      // techStack: ["Next.js", "PostgreSQL", "Supabase", "WebSockets", "Stripe"],
       logo: "/NEWLOGO.png",
       url: "https://wattshare.ca"
     },
@@ -213,7 +213,7 @@ export default function WorkSection() {
                         </div>
                       </div>
                       
-                      {project.techStack && (
+                      {/* {project.techStack && (
                         <div>
                           <h4 className="font-semibold mb-2 sm:mb-3 text-sm sm:text-base">Tech Stack</h4>
                           <div className="flex flex-wrap gap-1 sm:gap-2">
@@ -224,7 +224,7 @@ export default function WorkSection() {
                             ))}
                           </div>
                         </div>
-                      )}
+                      )} */}
                       
                       {project.focusAreas && (
                         <div>

@@ -465,10 +465,7 @@ export default function WattShareCaseStudy() {
                     <li>• Enhanced data protection and security</li>
                   </ul>
                 </div>
-                <div className="text-center">
-                
-                  <ImageModal src="/WattShare/SystemArchitecture.png" alt="System Architecture" caption="WattShare System Architecture" />
-                </div>
+             
               </div>
               <div className="mt-4 p-4 bg-green-50 rounded-lg">
                 <h5 className="font-semibold text-green-800 mb-2">Impact:</h5>
