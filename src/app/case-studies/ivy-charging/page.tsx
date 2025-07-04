@@ -33,7 +33,7 @@ export default function IvyChargingCaseStudy() {
               Ivy Charging Practice Story
             </h1>
             <p className="text-xl sm:text-2xl max-w-3xl mx-auto opacity-90">
-              Scaling Ontario's largest public EV charging network through strategic partnerships and user-centric design
+              Scaling Ontario&apos;s largest public EV charging network through strategic partnerships and user-centric design
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <span className="px-4 py-2 bg-white/20 rounded-full text-sm">Product Strategy</span>
@@ -53,7 +53,7 @@ export default function IvyChargingCaseStudy() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Executive Summary</h2>
           <div className="bg-white rounded-xl p-6 shadow-lg">
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              Ivy Charging represents a landmark public-private partnership between Hydro One and Ontario Power Generation, creating Ontario's largest public EV charging network. This case study explores the strategic planning, user experience design, and operational challenges of building a province-wide charging infrastructure.
+              Ivy Charging represents a landmark public-private partnership between Hydro One and Ontario Power Generation, creating Ontario&apos;s largest public EV charging network. This case study explores the strategic planning, user experience design, and operational challenges of building a province-wide charging infrastructure.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <div className="text-center">
@@ -80,7 +80,7 @@ export default function IvyChargingCaseStudy() {
             <ul className="space-y-3 text-blue-700">
               <li className="flex items-start">
                 <span className="mr-2 mt-1">•</span>
-                <span>Ontario's EV adoption rate growing 40% annually</span>
+                <span>Ontario&apos;s EV adoption rate growing 40% annually</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2 mt-1">•</span>
@@ -176,7 +176,7 @@ export default function IvyChargingCaseStudy() {
           <div className="bg-gradient-to-r from-blue-50 to-purple-50 border-l-4 border-blue-400 p-6 rounded-r-lg mb-8">
             <h3 className="text-xl font-semibold text-blue-800 mb-4">Case Study Overview</h3>
             <p className="text-blue-700">
-              This detailed case study explores how comprehensive UX research led to the identification and elimination of unnecessary workflow steps within the Ontario Charging Network's new user onboarding and initial sales conversion funnel, resulting in significant improvements in user adoption and conversion rates.
+              This detailed case study explores how comprehensive UX research led to the identification and elimination of unnecessary workflow steps within the Ontario Charging Network&apos;s new user onboarding and initial sales conversion funnel, resulting in significant improvements in user adoption and conversion rates.
             </p>
           </div>
 
@@ -191,7 +191,7 @@ export default function IvyChargingCaseStudy() {
               
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
                 <h4 className="font-semibold text-yellow-800 mb-2">Initial Hypothesis</h4>
-                <p className="text-yellow-700">Users were being asked for too much information too early, particularly the mandatory "Vehicle Registration and Detailed Profile Setup" before they could browse available chargers or view real-time pricing.</p>
+                <p className="text-yellow-700">Users were being asked for too much information too early, particularly the mandatory &quot;Vehicle Registration and Detailed Profile Setup&quot; before they could browse available chargers or view real-time pricing.</p>
               </div>
               
               <div className="grid md:grid-cols-2 gap-6">
@@ -274,7 +274,7 @@ export default function IvyChargingCaseStudy() {
                   <div className="space-y-3">
                     <div className="p-3 bg-red-50 rounded-lg">
                       <h5 className="font-semibold text-red-800">Critical Drop-off Point</h5>
-                      <p className="text-red-600 text-sm">38% abandonment on "Vehicle Information" screen</p>
+                      <p className="text-red-600 text-sm">38% abandonment on &quot;Vehicle Information&quot; screen</p>
                     </div>
                     <div className="p-3 bg-yellow-50 rounded-lg">
                       <h5 className="font-semibold text-yellow-800">Low Engagement</h5>
@@ -328,7 +328,7 @@ export default function IvyChargingCaseStudy() {
               
               <div className="bg-purple-50 border-l-4 border-purple-400 p-4 rounded-r-lg">
                 <h4 className="font-semibold text-purple-800 mb-2">Key Recommendation</h4>
-                <p className="text-purple-700">Remove mandatory "Vehicle Information and Detailed Profile Setup" from initial onboarding. Allow guest browsing with account creation deferred to charge initiation.</p>
+                <p className="text-purple-700">Remove mandatory &quot;Vehicle Information and Detailed Profile Setup&quot; from initial onboarding. Allow guest browsing with account creation deferred to charge initiation.</p>
               </div>
               
               <div>
@@ -466,7 +466,7 @@ export default function IvyChargingCaseStudy() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-semibold text-red-800 mb-2">Problem</h4>
-                  <p className="text-red-600">Existing electrical infrastructure couldn't support high-power DC fast chargers in many locations</p>
+                  <p className="text-red-600">Existing electrical infrastructure couldn&apos;t support high-power DC fast chargers in many locations</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-green-800 mb-2">Solution</h4>
