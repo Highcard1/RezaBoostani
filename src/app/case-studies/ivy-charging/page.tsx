@@ -291,11 +291,11 @@ export default function IvyChargingCaseStudy() {
                   <div className="space-y-3">
                     <div className="p-3 bg-green-50 rounded-lg">
                       <h5 className="font-semibold text-green-800">User Sentiment</h5>
-                      <p className="text-green-600 text-sm">"Just Let Me See It First!" - overwhelming desire for immediate access</p>
+                      <p className="text-green-600 text-sm">&quot;Just Let Me See It First!&quot; - overwhelming desire for immediate access</p>
                     </div>
                     <div className="p-3 bg-purple-50 rounded-lg">
                       <h5 className="font-semibold text-purple-800">Value Perception</h5>
-                      <p className="text-purple-600 text-sm">Vehicle details seen as "tedious chore" without immediate benefit</p>
+                      <p className="text-purple-600 text-sm">Vehicle details seen as &quot;tedious chore&quot; without immediate benefit</p>
                     </div>
                     <div className="p-3 bg-orange-50 rounded-lg">
                       <h5 className="font-semibold text-orange-800">Competitive Analysis</h5>
@@ -382,8 +382,8 @@ export default function IvyChargingCaseStudy() {
                   <div>
                     <h5 className="font-semibold text-green-700 mb-2">Key Improvements</h5>
                     <ul className="text-green-600 space-y-1 text-sm">
-                      <li>• 28% increase in "First Charger Search" completion</li>
-                      <li>• 12% increase in "First Charge Completed" conversion</li>
+                      <li>• 28% increase in &quot;First Charger Search&quot; completion</li>
+                      <li>• 12% increase in &quot;First Charge Completed&quot; conversion</li>
                       <li>• Drastically reduced time to first meaningful interaction</li>
                       <li>• Improved account creation completion rate</li>
                     </ul>
@@ -406,7 +406,7 @@ export default function IvyChargingCaseStudy() {
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8">
             <h3 className="text-2xl font-bold mb-4">Conclusion: UX Research as a Catalyst for Growth</h3>
             <p className="text-lg mb-4 opacity-90">
-              This case study demonstrates the profound impact of strategic UX research on product success. By meticulously applying a research framework – from problem definition and hypothesis formulation to design, implementation, and rigorous testing – we were able to identify and eliminate a critical, unnecessary workflow step in the Ontario Charging Network's onboarding process.
+              This case study demonstrates the profound impact of strategic UX research on product success. By meticulously applying a research framework – from problem definition and hypothesis formulation to design, implementation, and rigorous testing – we were able to identify and eliminate a critical, unnecessary workflow step in the Ontario Charging Network&apos;s onboarding process.
             </p>
             <p className="opacity-90">
               The results speak for themselves: a 28% increase in user engagement and 12% improvement in conversion rates, proving that user-centered design backed by rigorous research can drive significant business outcomes while enhancing user satisfaction.
@@ -550,7 +550,7 @@ export default function IvyChargingCaseStudy() {
           <div className="bg-gradient-to-r from-blue-600 to-green-600 text-white rounded-xl p-8">
             <h2 className="text-2xl font-bold mb-4">Interested in Infrastructure Projects?</h2>
             <p className="text-lg mb-6 opacity-90">
-              Let's discuss how we can scale your infrastructure initiatives
+              Let&apos;s discuss how we can scale your infrastructure initiatives
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

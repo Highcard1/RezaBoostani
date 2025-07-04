@@ -191,10 +191,10 @@ export default function ThunderVoltCaseStudy() {
             </div>
             
             <div className="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
-              <h3 className="text-xl font-semibold text-blue-800 mb-4">ThunderVolt's Strategic Product Vision</h3>
-              <blockquote className="text-lg text-blue-700 italic mb-6">
-                "To liberate every urban electric vehicle owner from the constraints of charging infrastructure by delivering an intelligent, personal, and effortlessly portable power ecosystem, ensuring unparalleled convenience, absolute freedom from range anxiety, and a seamless integration into their modern, time-conscious lifestyle."
-              </blockquote>
+              <h3 className="text-xl font-semibold text-blue-800 mb-4">ThunderVolt&apos;s Strategic Product Vision</h3>
+                              <blockquote className="text-lg text-blue-700 italic mb-6">
+                  &quot;To liberate every urban electric vehicle owner from the constraints of charging infrastructure by delivering an intelligent, personal, and effortlessly portable power ecosystem, ensuring unparalleled convenience, absolute freedom from range anxiety, and a seamless integration into their modern, time-conscious lifestyle.&quot;
+                </blockquote>
             </div>
             
             <div className="bg-white rounded-xl p-6 shadow-lg">
@@ -242,7 +242,7 @@ export default function ThunderVoltCaseStudy() {
               <span className="mt-2 text-sm text-gray-600">Competitive positioning map: ThunderVolt vs. other portable charging solutions</span>
             </div>
             
-            <h3 className="text-xl font-semibold mb-4">ThunderVolt's Competitive Advantages</h3>
+            <h3 className="text-xl font-semibold mb-4">ThunderVolt&apos;s Competitive Advantages</h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h4 className="font-semibold text-gray-800 mb-3">Core Strengths</h4>
@@ -269,7 +269,7 @@ export default function ThunderVoltCaseStudy() {
             <div className="mt-8 bg-green-50 p-6 rounded-lg">
               <h4 className="font-semibold text-green-800 mb-3">Positioning Statement</h4>
               <p className="text-green-700">
-                "For urban EV owners, particularly condominium and townhouse residents in the GTA, who face significant barriers to convenient and reliable at-home charging, ThunderVolt is the revolutionary personal EV power ecosystem that delivers unparalleled freedom from charging anxiety and public charger dependency, by offering a uniquely portable, intelligent, and safe charging solution that seamlessly integrates into their daily commute and lifestyle, unlike any fixed infrastructure or limited portable alternatives."
+                &quot;For urban EV owners, particularly condominium and townhouse residents in the GTA, who face significant barriers to convenient and reliable at-home charging, ThunderVolt is the revolutionary personal EV power ecosystem that delivers unparalleled freedom from charging anxiety and public charger dependency, by offering a uniquely portable, intelligent, and safe charging solution that seamlessly integrates into their daily commute and lifestyle, unlike any fixed infrastructure or limited portable alternatives.&quot;
               </p>
             </div>
           </div>
@@ -390,7 +390,7 @@ export default function ThunderVoltCaseStudy() {
             <div className="bg-gray-100 rounded-xl p-8 text-center flex flex-col items-center">
               <Image src="/ThunderVolt/ModularBatteryPackage.png" width={350} height={300} alt="Modular Battery Package" className="rounded-lg mb-4" />
               <h3 className="font-semibold text-gray-800 mb-2">Modular Battery Package</h3>
-              <p className="text-gray-600">ThunderVolt's modular battery design for scalability and easy maintenance</p>
+              <p className="text-gray-600">ThunderVolt&apos;s modular battery design for scalability and easy maintenance</p>
             </div>
             {/* Portable Battery Product Images */}
             <div className="bg-gray-100 rounded-xl p-8 text-center flex flex-col items-center">
@@ -507,7 +507,7 @@ export default function ThunderVoltCaseStudy() {
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8">
             <h2 className="text-2xl font-bold mb-4"></h2>
             <p className="text-lg mb-6 opacity-90">
-              Let's discuss how we can develop comprehensive product strategies and roadmaps for your next innovation
+              Let&apos;s discuss how we can develop comprehensive product strategies and roadmaps for your next innovation
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
