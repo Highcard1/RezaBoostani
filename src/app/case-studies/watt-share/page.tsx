@@ -57,7 +57,7 @@ export default function WattShareCaseStudy() {
             <p className="text-sm sm:text-lg text-gray-700 leading-relaxed mb-4">
               WattShare emerged from a simple observation: EV owners had unused home chargers while neighbors and tenants lacked convenient charging options. This case study explores the journey from problem identification to MVP launch, covering user research, technical implementation, and strategic decision-making.
             </p>
-            <div className="grid md:grid-cols-3 gap-4 sm:gap-6 mt-4 sm:mt-8">
+            {/* <div className="grid md:grid-cols-3 gap-4 sm:gap-6 mt-4 sm:mt-8">
               <div className="text-center">
                 <div className="text-2xl sm:text-3xl font-bold text-green-600">50+</div>
                 <div className="text-xs sm:text-sm text-gray-600">Beta Users</div>
@@ -70,7 +70,7 @@ export default function WattShareCaseStudy() {
                 <div className="text-2xl sm:text-3xl font-bold text-purple-600">100%</div>
                 <div className="text-xs sm:text-sm text-gray-600">MVP & Beta Launch</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
