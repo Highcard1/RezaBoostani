@@ -9,7 +9,7 @@ export default function ContactSection() {
     <section id="contact" className="py-8 sm:py-16 px-2 sm:px-4 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-          Have an idea or just want to talk shop?
+          talk shop?
         </h2>
         <p className="text-base sm:text-lg mb-6 sm:mb-8">
           I&apos;m open to collaborations, questions, or coffee.

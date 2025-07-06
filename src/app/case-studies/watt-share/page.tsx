@@ -554,16 +554,14 @@ export default function WattShareCaseStudy() {
 
           {/* Conclusion */}
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8">
-            <h3 className="text-2xl font-bold mb-4">Conclusion: The Product Manager as an Orchestrator of Value</h3>
+            <h3 className="text-2xl font-bold mb-4"></h3>
             <p className="text-lg mb-4 opacity-90">
-              This sprint exemplifies the multifaceted role of a product manager in an agile environment. It&apos;s not just about writing tickets; 
+              This sprint summary exemplifies the multifaceted role of a product manager in an agile environment. It&apos;s not just about writing tickets; 
               it&apos;s about deeply understanding user problems, translating those into clear requirements, prioritizing relentlessly, 
               fostering seamless collaboration across diverse teams, and constantly seeking ways to deliver incremental, measurable value.
             </p>
             <p className="opacity-90">
-              By focusing on both user-facing enhancements and critical technical foundations, we ensured that ChargeNow not only delighted 
-              its users in the short term but also built a robust platform for sustainable growth. This commitment to continuous improvement, 
-              guided by agile principles, is what truly defines effective product management.
+        
             </p>
           </div>
         </section>
@@ -571,9 +569,9 @@ export default function WattShareCaseStudy() {
         {/* Call to Action */}
         <section className="text-center">
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8">
-            <h2 className="text-2xl font-bold mb-4">Ready to Build Something Similar?</h2>
+            <h2 className="text-2xl font-bold mb-4"></h2>
             <p className="text-lg mb-6 opacity-90">
-              Let&apos;s discuss how we can bring your product vision to life
+            
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

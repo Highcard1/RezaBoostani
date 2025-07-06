@@ -502,9 +502,9 @@ export default function ThunderVoltCaseStudy() {
         {/* Call to Action */}
         <section className="text-center">
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8">
-            <h2 className="text-2xl font-bold mb-4">Ready to Build Something Similar?</h2>
+            <h2 className="text-2xl font-bold mb-4"></h2>
             <p className="text-lg mb-6 opacity-90">
-              Let&apos;s discuss how we can develop comprehensive product strategies and roadmaps for your next innovation
+              
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
