@@ -33,7 +33,7 @@ export default function IvyChargingCaseStudy() {
               Ivy Charging Practice Story
             </h1>
             <p className="text-xl sm:text-2xl max-w-3xl mx-auto opacity-90">
-              Scaling Ontario's largest public EV charging network through strategic partnerships and user-centric design
+              Scaling Ontario&apos;s largest public EV charging network through strategic partnerships and user-centric design
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <span className="px-4 py-2 bg-white/20 rounded-full text-sm">Product Strategy</span>
@@ -53,7 +53,7 @@ export default function IvyChargingCaseStudy() {
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Executive Summary</h2>
           <div className="bg-white rounded-xl p-6 shadow-lg">
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              Ivy Charging represents a landmark public-private partnership between Hydro One and Ontario Power Generation, creating Ontario's largest public EV charging network. This case study explores the strategic planning, user experience design, and operational challenges of building a province-wide charging infrastructure.
+              Ivy Charging represents a landmark public-private partnership between Hydro One and Ontario Power Generation, creating Ontario&apos;s largest public EV charging network. This case study explores the strategic planning, user experience design, and operational challenges of building a province-wide charging infrastructure.
             </p>
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <div className="text-center">
@@ -80,7 +80,7 @@ export default function IvyChargingCaseStudy() {
             <ul className="space-y-3 text-blue-700">
               <li className="flex items-start">
                 <span className="mr-2 mt-1">•</span>
-                <span>Ontario's EV adoption rate growing 40% annually</span>
+                <span>Ontario&apos;s EV adoption rate growing 40% annually</span>
               </li>
               <li className="flex items-start">
                 <span className="mr-2 mt-1">•</span>
@@ -220,7 +220,7 @@ export default function IvyChargingCaseStudy() {
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-semibold text-red-800 mb-2">Problem</h4>
-                  <p className="text-red-600">Existing electrical infrastructure couldn't support high-power DC fast chargers in many locations</p>
+                  <p className="text-red-600">Existing electrical infrastructure couldn&apos;t support high-power DC fast chargers in many locations</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-green-800 mb-2">Solution</h4>
@@ -304,7 +304,7 @@ export default function IvyChargingCaseStudy() {
           <div className="bg-gradient-to-r from-blue-600 to-green-600 text-white rounded-xl p-8">
             <h2 className="text-2xl font-bold mb-4">Interested in Infrastructure Projects?</h2>
             <p className="text-lg mb-6 opacity-90">
-              Let's discuss how we can scale your infrastructure initiatives
+              Let&apos;s discuss how we can scale your infrastructure initiatives
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
