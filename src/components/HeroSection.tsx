@@ -7,7 +7,7 @@ export default function HeroSection() {
       <div className=" absolute inset-0 w-full h-full z-0">
         <Image
           src="/pexels-daniel-andraski-197681005-11554666.jpg"
-          alt="Background"
+          alt="Background - Reza Boostani Portfolio"
           width={3840}
           height={2160}
           quality={90}
@@ -49,12 +49,14 @@ export default function HeroSection() {
           <div className="flex-1 flex rounded justify-center lg:justify-end">
             <Image
               src={"/20250627_150331-Copy.jpg"}
-              alt="Reza Boostani - Product Manager and Technical Builder based in Toronto, specializing in EV charging and sustainable technology"
+              alt="Reza Boostani - Product Manager and Technical Builder based in Toronto, specializing in EV charging and sustainable technology. Professional headshot of Reza Boostani."
               width={800}
               height={960}
               quality={95}
               className="w-80 h-96 sm:w-100 sm:h-120 rounded border-white border-4 object-cover border-0 border-gray-200 shadow-lg"
               priority
+              loading="eager"
+              fetchPriority="high"
             />
           </div>
         </div>
