@@ -1,4 +1,6 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
   "headers": [
     {
       "source": "/reza-profile-2025.jpg",
@@ -17,6 +19,13 @@
           "value": "public, max-age=0, must-revalidate"
         }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/20250627_150331-.jpg",
+      "destination": "/reza-profile-2025.jpg",
+      "permanent": false
     }
   ]
 } 

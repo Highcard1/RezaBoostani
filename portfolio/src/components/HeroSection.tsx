@@ -32,7 +32,7 @@ export default function HeroSection() {
               Product Manager & Entrepreneur | SaaS & Startups
             </p>
             <p className="text-base sm:text-lg text-gray-500  mb-8 sm:mb-12 max-w-2xl lg:mx-0 mx-auto">
-              Based in Toronto, building user-first products.
+              Based in Toronto, building user-first products. Updated 2025.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <a

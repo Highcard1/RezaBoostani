@@ -87,8 +87,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Reza Boostani - Product Manager & Technical Builder | EV Innovation | Toronto",
-    description: "Reza Boostani is a product manager and technical builder based in Toronto, specializing in EV charging and sustainable technology.",
+    title: "Reza Boostani - Product Manager,  Entrepreneur  & Technical Builder | EV Innovation | Toronto",
+    description: "Reza Boostani is a product manager, technical builder and  Entrepreneur based in Toronto, specializing in sustainable technology.",
           images: ["/reza-profile-2025.jpg"],
     creator: "@rezaboostani",
   },
@@ -109,7 +109,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={`bg-transparent text-gray-900 ${tomorrow.variable} font-sans`}>
       <Head>
         <title>Reza Boostani | Product Manager &amp; Technical Builder | Toronto</title>
-        <meta name="description" content="Reza Boostani - Product Manager and Technical Builder based in Toronto. Specializing in EV charging, sustainable technology, SaaS, and startups. View portfolio, experience, and projects." />
+        <meta name="description" content="Reza Boostani - Product Manager and  Entrepreneur based in Toronto. Specializing in  sustainable technology, SaaS, and startups. View portfolio, experience, and projects." />
         <meta name="keywords" content="Reza Boostani, reza boostani, Reza Boostani Toronto, Reza Boostani Product Manager, Reza Boostani EV charging, Reza Boostani portfolio, Reza Boostani McMaster, Reza Boostani WattShare, product manager, technical builder, EV charging, sustainable tech, Toronto, startup, SaaS" />
         <meta name="author" content="Reza Boostani" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
