@@ -1,7 +1,7 @@
+import React from "react";
 import type { Metadata } from "next";
 import { Tomorrow } from "next/font/google";
 import "./globals.css";
-import Head from 'next/head';
 import Script from 'next/script';
 
 const tomorrow = Tomorrow({
@@ -107,7 +107,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`bg-transparent text-gray-900 ${tomorrow.variable} font-sans`}>
-      <Head>
         <title>Reza Boostani | Product Manager &amp; Technical Builder | Toronto</title>
         <meta name="description" content="Reza Boostani - Product Manager and  Entrepreneur based in Toronto. Specializing in  sustainable technology, SaaS, and startups. View portfolio, experience, and projects." />
         <meta name="keywords" content="Reza Boostani, reza boostani, Reza Boostani Toronto, Reza Boostani Product Manager, Reza Boostani EV charging, Reza Boostani portfolio, Reza Boostani McMaster, Reza Boostani WattShare, product manager, technical builder, EV charging, sustainable tech, Toronto, startup, SaaS" />
@@ -275,7 +274,6 @@ export default function RootLayout({
         }) }} />
         
         <link href="https://fonts.googleapis.com/css2?family=Tomorrow:wght@400;700&display=swap" rel="stylesheet" />
-      </Head>
       
       {/* Google Analytics */}
       <Script
