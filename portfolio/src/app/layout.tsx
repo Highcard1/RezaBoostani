@@ -98,6 +98,7 @@ export const metadata: Metadata = {
   verification: {
     google: "your-google-verification-code",
   },
+
 };
 
 export default function RootLayout({
@@ -107,6 +108,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`bg-transparent text-gray-900 ${dmSans.variable} font-sans`}>
+      <head>
         <title>Reza Boostani | Product Manager &amp; Technical Builder | Toronto</title>
         <meta name="description" content="Reza Boostani - Product Manager and  Entrepreneur based in Toronto. Specializing in  sustainable technology, SaaS, and startups. View portfolio, experience, and projects." />
         <meta name="keywords" content="Reza Boostani, reza boostani, Reza Boostani Toronto, Reza Boostani Product Manager, Reza Boostani EV charging, Reza Boostani portfolio, Reza Boostani McMaster, Reza Boostani WattShare, product manager, technical builder, EV charging, sustainable tech, Toronto, startup, SaaS" />
@@ -159,121 +161,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Reza Boostani" />
-        
-        {/* Enhanced Structured Data */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'Person',
-          '@id': 'https://www.rezaboostani.com/#person',
-          name: 'Reza Boostani',
-          alternateName: 'reza boostani',
-          url: 'https://www.rezaboostani.com/',
-          sameAs: [
-            'https://linkedin.com/in/rezaboostani',
-            'https://github.com/Marshico'
-          ],
-          jobTitle: 'Product Manager & Technical Builder',
-          worksFor: [
-            {
-              '@type': 'Organization',
-              name: 'WattShare',
-              url: 'https://www.rezaboostani.com/case-studies/watt-share'
-            },
-            {
-              '@type': 'Organization',
-              name: 'Ivy Charging',
-              url: 'https://www.rezaboostani.com/case-studies/ivy-charging'
-            }
-          ],
-          address: {
-            '@type': 'PostalAddress',
-            addressLocality: 'Toronto',
-            addressRegion: 'Ontario',
-            addressCountry: 'Canada'
-          },
-          image: {
-            '@type': 'ImageObject',
-            url: 'https://www.rezaboostani.com/reza-profile-2025-v2.jpg',
-            width: 800,
-            height: 960,
-            caption: 'Reza Boostani - Product Manager and Technical Builder'
-          },
-          description: 'Product Manager & Technical Builder specializing in EV charging and sustainable technology. Based in Toronto, Canada.',
-          alumniOf: {
-            '@type': 'Organization',
-            name: 'McMaster University',
-            url: 'https://www.mcmaster.ca/'
-          },
-          knowsAbout: [
-            'Product Management',
-            'EV Charging',
-            'Sustainable Technology',
-            'Startup Development',
-            'Full-Stack Development',
-            'User Research',
-            'Product Strategy',
-            'SaaS',
-            'Electric Vehicles',
-            'Climate Technology'
-          ],
-          hasOccupation: {
-            '@type': 'Occupation',
-            name: 'Product Manager',
-            description: 'Product Manager specializing in EV charging and sustainable technology'
-          },
-          nationality: 'Canadian',
-          birthPlace: {
-            '@type': 'Place',
-            name: 'Toronto, Ontario, Canada'
-          }
-        }) }} />
-        
-        {/* Organization Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'Organization',
-          '@id': 'https://www.rezaboostani.com/#organization',
-          name: 'Reza Boostani Portfolio',
-          url: 'https://www.rezaboostani.com/',
-          logo: 'https://www.rezaboostani.com/NEWLOGO.png',
-          description: 'Personal portfolio website of Reza Boostani, Product Manager and Technical Builder',
-          founder: {
-            '@type': 'Person',
-            name: 'Reza Boostani'
-          },
-          address: {
-            '@type': 'PostalAddress',
-            addressLocality: 'Toronto',
-            addressRegion: 'Ontario',
-            addressCountry: 'Canada'
-          }
-        }) }} />
-        
-        {/* Website Schema */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          '@context': 'https://schema.org',
-          '@type': 'WebSite',
-          '@id': 'https://www.rezaboostani.com/#website',
-          url: 'https://www.rezaboostani.com/',
-          name: 'Reza Boostani Portfolio',
-          description: 'Personal portfolio website of Reza Boostani, Product Manager and Technical Builder',
-          author: {
-            '@type': 'Person',
-            name: 'Reza Boostani'
-          },
-          publisher: {
-            '@type': 'Person',
-            name: 'Reza Boostani'
-          },
-          inLanguage: 'en-US',
-          potentialAction: {
-            '@type': 'SearchAction',
-            target: 'https://www.rezaboostani.com/search?q={search_term_string}',
-            'query-input': 'required name=search_term_string'
-          }
-        }) }} />
-        
-
+      </head>
       
       {/* Google Analytics */}
       <Script
