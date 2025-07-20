@@ -1,9 +1,10 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
+  "framework": "nextjs",
   "headers": [
     {
-      "source": "/reza-profile-2025.jpg",
+      "source": "/reza-profile-2025-v2.jpg",
       "headers": [
         {
           "key": "Cache-Control",
