@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     siteName: "Reza Boostani Portfolio",
     images: [
       {
-        url: "/reza-profile-2025.jpg",
+        url: "/reza-profile-2025-v2.jpg",
         width: 800,
         height: 960,
         alt: "Reza Boostani - Product Manager and Technical Builder based in Toronto",
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Reza Boostani - Product Manager,  Entrepreneur  & Technical Builder | EV Innovation | Toronto",
     description: "Reza Boostani is a product manager, technical builder and  Entrepreneur based in Toronto, specializing in sustainable technology.",
-          images: ["/reza-profile-2025.jpg"],
+          images: ["/reza-profile-2025-v2.jpg"],
     creator: "@rezaboostani",
   },
   alternates: {
@@ -119,7 +119,7 @@ export default function RootLayout({
         <meta property="og:description" content="Reza Boostani - Product Manager and Technical Builder based in Toronto. Specializing in EV charging, sustainable technology, SaaS, and startups." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.rezaboostani.com/" />
-        <meta property="og:image" content="https://www.rezaboostani.com/reza-profile-2025.jpg" />
+        <meta property="og:image" content="https://www.rezaboostani.com/reza-profile-2025-v2.jpg" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="960" />
         <meta property="og:image:alt" content="Reza Boostani - Product Manager and Technical Builder based in Toronto" />
@@ -130,7 +130,7 @@ export default function RootLayout({
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Reza Boostani | Product Manager &amp; Technical Builder | Toronto" />
         <meta name="twitter:description" content="Reza Boostani - Product Manager and Technical Builder based in Toronto. Specializing in EV charging, sustainable technology, SaaS, and startups." />
-        <meta name="twitter:image" content="https://www.rezaboostani.com/reza-profile-2025.jpg" />
+        <meta name="twitter:image" content="https://www.rezaboostani.com/reza-profile-2025-v2.jpg" />
         <meta name="twitter:image:alt" content="Reza Boostani - Product Manager and Technical Builder based in Toronto" />
         <meta name="twitter:creator" content="@rezaboostani" />
         
@@ -194,7 +194,7 @@ export default function RootLayout({
           },
           image: {
             '@type': 'ImageObject',
-            url: 'https://www.rezaboostani.com/reza-profile-2025.jpg',
+            url: 'https://www.rezaboostani.com/reza-profile-2025-v2.jpg',
             width: 800,
             height: 960,
             caption: 'Reza Boostani - Product Manager and Technical Builder'

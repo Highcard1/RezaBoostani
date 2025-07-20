@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-// Add a build-time cache buster
-const CACHE_BUSTER = `?v=${Date.now()}`;
+// Add a cache buster that changes on each deployment
+const CACHE_BUSTER = `?v=${process.env.VERCEL_GIT_COMMIT_SHA || Date.now()}`;
 
 export default function HeroSection() {
   return (
@@ -51,7 +51,7 @@ export default function HeroSection() {
           </div>
           <div className="flex-1 flex rounded justify-center lg:justify-end">
             <Image
-              src={"/reza-profile-2025.jpg" + CACHE_BUSTER}
+              src={"/reza-profile-2025-v2.jpg" + CACHE_BUSTER}
               alt="Reza Boostani - Product Manager and Technical Builder based in Toronto, specializing in EV charging and sustainable technology. Professional headshot of Reza Boostani."
               width={850}
               height={1200}
