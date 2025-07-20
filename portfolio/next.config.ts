@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
   images: {
-    domains: ['wattshare-images.s3.us-east-1.amazonaws.com'],
+    unoptimized: true,
   },
   generateBuildId: async () => {
     return 'build-' + Date.now()
@@ -13,6 +13,15 @@ const nextConfig: NextConfig = {
   // Add headers for better caching and SEO
   async headers() {
     return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=0, must-revalidate',
+          },
+        ],
+      },
       {
         source: '/(.*)',
         headers: [
