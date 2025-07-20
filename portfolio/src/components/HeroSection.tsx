@@ -25,8 +25,8 @@ export default function HeroSection() {
           {/* <div className="absolute inset-0 bg-white bg-opacity-70 dark:bg-gray-900 dark:bg-opacity-60 rounded-xl pointer-events-none" /> */}
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900  mb-4 sm:mb-6 leading-tight">
-              I turn ideas into products{" "}
-              <span className="text-blue-600 ">people actually use.</span>
+            Business outcomes start with the right product decisions. {" "}
+              <span className="text-blue-600 ">I help make those.</span>
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-600  mb-6 sm:mb-8 max-w-3xl lg:mx-0 mx-auto font-medium">
               Product Manager & Entrepreneur | SaaS & Startups
