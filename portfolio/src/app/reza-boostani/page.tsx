@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: 'Reza Boostani Portfolio',
     images: [
       {
-        url: '/profile-new.jpg',
+        url: '/reza-profile-2025.jpg',
         width: 800,
         height: 960,
         alt: 'Reza Boostani - Product Manager and Technical Builder',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Reza Boostani - Product Manager & Technical Builder | Toronto, Canada',
     description: 'Reza Boostani is a product manager and technical builder based in Toronto, specializing in EV charging and sustainable technology.',
-          images: ['/profile-new.jpg'],
+          images: ['/reza-profile-2025.jpg'],
   },
   alternates: {
     canonical: 'https://www.rezaboostani.com/reza-boostani',
@@ -95,7 +95,7 @@ export default function RezaBoostaniPage() {
             </div>
             <div className="flex justify-center lg:justify-end">
               <Image
-                src="/profile-new.jpg"
+                src="/reza-profile-2025.jpg"
                 alt="Reza Boostani - Product Manager and Technical Builder based in Toronto, specializing in EV charging and sustainable technology"
                 width={600}
                 height={720}
@@ -229,7 +229,7 @@ export default function RezaBoostaniPage() {
             },
             image: {
               '@type': 'ImageObject',
-              url: 'https://www.rezaboostani.com/profile-new.jpg',
+              url: 'https://www.rezaboostani.com/reza-profile-2025.jpg',
               width: 800,
               height: 960,
               caption: 'Reza Boostani - Product Manager and Technical Builder'
