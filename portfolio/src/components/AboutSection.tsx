@@ -7,7 +7,7 @@ export default function AboutSection() {
             The Story
           </h2>
           <p className="text-base sm:text-lg max-w-2xl mx-auto">
-            A product manager who codes. A founder who validates. A strategist who ships.
+            Product Management, Technology and Entrepreneurship
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">

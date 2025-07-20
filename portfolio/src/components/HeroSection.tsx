@@ -9,7 +9,7 @@ export default function HeroSection() {
           src="/pexels-daniel-andraski-197681005-11554666.jpg"
           alt="Background - Reza Boostani Portfolio"
           width={3840}
-          height={2160}
+          height={2460}
           quality={90}
           className="w-full h-full object-cover object-center opacity-5"
         />
@@ -26,10 +26,10 @@ export default function HeroSection() {
               <span className="text-blue-600 ">people actually use.</span>
             </h1>
             <p className="text-lg sm:text-xl lg:text-2xl text-gray-600  mb-6 sm:mb-8 max-w-3xl lg:mx-0 mx-auto font-medium">
-              Product Manager & Builder | EV & Climate Tech | SaaS & Startups
+              Product Manager & Entrepreneur | SaaS & Startups
             </p>
             <p className="text-base sm:text-lg text-gray-500  mb-8 sm:mb-12 max-w-2xl lg:mx-0 mx-auto">
-              Based in Toronto, building the future of sustainable mobility and user-first products.
+              Based in Toronto, building user-first products.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
               <a
@@ -48,12 +48,12 @@ export default function HeroSection() {
           </div>
           <div className="flex-1 flex rounded justify-center lg:justify-end">
             <Image
-              src={"/20250627_150331-Copy.jpg"}
+              src={"/20250627_150331-.jpg"}
               alt="Reza Boostani - Product Manager and Technical Builder based in Toronto, specializing in EV charging and sustainable technology. Professional headshot of Reza Boostani."
-              width={800}
-              height={960}
+              width={850}
+              height={1200}
               quality={95}
-              className="w-80 h-96 sm:w-100 sm:h-120 rounded border-white border-4 object-cover border-0 border-gray-200 shadow-lg"
+              className="w-80 h-132 sm:w-100 sm:h-132 rounded border-white border-4 object-cover border-0 border-gray-200 shadow-lg"
               priority
               loading="eager"
               fetchPriority="high"
