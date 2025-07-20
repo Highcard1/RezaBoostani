@@ -48,7 +48,7 @@ export default function HeroSection() {
           </div>
           <div className="flex-1 flex rounded justify-center lg:justify-end">
             <Image
-              src={"/20250627_150331-.jpg"}
+              src={"/20250627_150331-.jpg?v=2"}
               alt="Reza Boostani - Product Manager and Technical Builder based in Toronto, specializing in EV charging and sustainable technology. Professional headshot of Reza Boostani."
               width={850}
               height={1200}
