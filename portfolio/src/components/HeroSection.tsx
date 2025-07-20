@@ -1,5 +1,8 @@
 import Image from "next/image";
 
+// Add a build-time cache buster
+const CACHE_BUSTER = process.env.NODE_ENV === 'production' ? `?v=${Date.now()}` : '';
+
 export default function HeroSection() {
   return (
     <section id="home" className=" relative pt-16 sm:pt-20 pb-12 sm:pb-16 px-0 sm:px-0 lg:px-0 bg-white  overflow-hidden w-full">
@@ -48,7 +51,7 @@ export default function HeroSection() {
           </div>
           <div className="flex-1 flex rounded justify-center lg:justify-end">
             <Image
-              src={"/20250627_150331-.jpg?v=2"}
+              src={"/profile-new.jpg"}
               alt="Reza Boostani - Product Manager and Technical Builder based in Toronto, specializing in EV charging and sustainable technology. Professional headshot of Reza Boostani."
               width={850}
               height={1200}
