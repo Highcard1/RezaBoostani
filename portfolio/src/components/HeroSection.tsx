@@ -41,7 +41,7 @@ export default function HeroSection() {
               </p>
               
               <p className="text-base sm:text-lg text-gray-500 mb-8 sm:mb-12 max-w-2xl lg:mx-0 mx-auto">
-                Based in <strong>Toronto, Canada</strong>, building user-first products. Specializing in <strong>EV charging</strong> and <strong>sustainable technology</strong>. Updated 2025.
+                Based in <strong>Toronto, Canada</strong>
               </p>
             </div>
             
