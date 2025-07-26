@@ -6,6 +6,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import EducationSection from "@/components/EducationSection";
 import WorkSection from "@/components/WorkSection";
+import BookingSection from "@/components/BookingSection";
 import ToolsSection from "@/components/ToolsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -72,6 +73,7 @@ export default function Home() {
 
       {/* Render the rest of WorkSection (other projects) here if needed */}
       <WorkSection />
+      <BookingSection />
       <ToolsSection />
       <ContactSection />
       <Footer />
