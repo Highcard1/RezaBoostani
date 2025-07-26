@@ -12,7 +12,7 @@ export default function BookingSection() {
       if (!iframeLoaded) {
         setIframeError(true);
       }
-    }, 10000); // 10 second timeout
+    }, 15000); // 15 second timeout
 
     return () => clearTimeout(timeout);
   }, [iframeLoaded]);
@@ -24,9 +24,9 @@ export default function BookingSection() {
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Book a Mentoring Session
           </h2>
-                      <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Ready to accelerate your product career? Let&apos;s discuss your goals, challenges, and strategies for success.
-            </p>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Ready to accelerate your product career? Let&apos;s discuss your goals, challenges, and strategies for success.
+          </p>
         </div>
         
         <div className="flex justify-center">
@@ -43,7 +43,7 @@ export default function BookingSection() {
           >
             {!iframeError ? (
               <iframe 
-                src="https://adplist.org/widgets/booking?src=reza-boostani&theme=dark" 
+                src="https://adplist.org/mentors/reza-boostani" 
                 title="Book a mentoring session with Reza Boostani"
                 width="100%" 
                 height="100%" 
@@ -58,7 +58,6 @@ export default function BookingSection() {
                   setIframeError(true);
                 }}
                 allow="fullscreen"
-                sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
               />
             ) : (
               <div className="flex items-center justify-center h-full bg-white rounded-lg">

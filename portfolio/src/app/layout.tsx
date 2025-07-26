@@ -12,7 +12,7 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Reza Boostani - Product Manager & Technical Builder | EV Innovation | Toronto",
-  description: "Reza Boostani is a product manager and technical builder based in Toronto, specializing in EV charging and sustainable technology. Expert in SaaS, startups, and user-first product development.",
+  description: "Reza Boostani is a product manager and technical builder based in Toronto, specializing in EV charging and sustainable technology. Expert in SaaS, startups, and user-first product development. View portfolio, experience, and projects.",
   keywords: [
     "Reza Boostani",
     "reza boostani",
@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     "Reza Boostani WattShare",
     "Reza Boostani Ivy Charging",
     "Reza Boostani ThunderVolt",
+    "Reza Boostani Canada",
+    "Reza Boostani Ontario",
+    "Reza Boostani sustainable technology",
+    "Reza Boostani SaaS",
+    "Reza Boostani startup",
+    "Reza Boostani entrepreneur",
+    "Reza Boostani technical builder",
+    "Reza Boostani full stack",
+    "Reza Boostani Next.js",
+    "Reza Boostani React",
+    "Reza Boostani TypeScript",
+    "Reza Boostani product development",
+    "Reza Boostani user research",
+    "Reza Boostani product strategy",
+    "Reza Boostani climate tech",
+    "Reza Boostani electric vehicle",
+    "Reza Boostani charging infrastructure",
     "product manager",
     "product owner",
     "technical builder",
@@ -47,7 +64,10 @@ export const metadata: Metadata = {
     "TypeScript",
     "electric vehicle",
     "climate tech",
-    "sustainable mobility"
+    "sustainable mobility",
+    "entrepreneur",
+    "innovation",
+    "technology leader"
   ],
   authors: [{ name: "Reza Boostani", url: "https://www.rezaboostani.com" }],
   creator: "Reza Boostani",
@@ -72,9 +92,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://rezaboostani.com",
-    title: "Reza Boostani - Product Manager &  Entrepreneur | Toronto, Ontario, Canada",
-    description: "Reza Boostani is a product manager and  Entrepreneur based in Toronto, specializing in sustainable technology. Expert in SaaS, startups, and user-first product development.",
+    url: "https://www.rezaboostani.com",
+    title: "Reza Boostani - Product Manager & Technical Builder | EV Innovation | Toronto",
+    description: "Reza Boostani is a product manager and technical builder based in Toronto, specializing in EV charging and sustainable technology. Expert in SaaS, startups, and user-first product development.",
     siteName: "Reza Boostani Portfolio",
     images: [
       {
@@ -87,18 +107,17 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Reza Boostani - Product Manager,  Entrepreneur  & Technical Builder | EV Innovation | Toronto",
-    description: "Reza Boostani is a product manager, technical builder and  Entrepreneur based in Toronto, specializing in sustainable technology.",
-          images: ["/reza-profile-2025-v2.jpg"],
+    title: "Reza Boostani - Product Manager & Technical Builder | EV Innovation | Toronto",
+    description: "Reza Boostani is a product manager and technical builder based in Toronto, specializing in sustainable technology.",
+    images: ["/reza-profile-2025-v2.jpg"],
     creator: "@rezaboostani",
   },
   alternates: {
-    canonical: "https://rezaboostani.com",
+    canonical: "https://www.rezaboostani.com",
   },
   verification: {
     google: "your-google-verification-code",
   },
-
 };
 
 export default function RootLayout({
@@ -110,8 +129,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={`bg-transparent text-gray-900 ${dmSans.variable} font-sans`}>
       <head>
         <title>Reza Boostani | Product Manager &amp; Technical Builder | Toronto</title>
-        <meta name="description" content="Reza Boostani - Product Manager and  Entrepreneur based in Toronto. Specializing in  sustainable technology, SaaS, and startups. View portfolio, experience, and projects." />
-        <meta name="keywords" content="Reza Boostani, reza boostani, Reza Boostani Toronto, Reza Boostani Product Manager, Reza Boostani EV charging, Reza Boostani portfolio, Reza Boostani McMaster, Reza Boostani WattShare, product manager, technical builder, EV charging, sustainable tech, Toronto, startup, SaaS" />
+        <meta name="description" content="Reza Boostani - Product Manager and Technical Builder based in Toronto. Specializing in EV charging, sustainable technology, SaaS, and startups. View portfolio, experience, and projects." />
+        <meta name="keywords" content="Reza Boostani, reza boostani, Reza Boostani Toronto, Reza Boostani Product Manager, Reza Boostani EV charging, Reza Boostani portfolio, Reza Boostani McMaster, Reza Boostani WattShare, Reza Boostani Canada, Reza Boostani Ontario, product manager, technical builder, EV charging, sustainable tech, Toronto, startup, SaaS, entrepreneur" />
         <meta name="author" content="Reza Boostani" />
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
         
@@ -154,6 +173,35 @@ export default function RootLayout({
         <meta name="DC.coverage" content="Toronto, Canada" />
         <meta name="DC.rights" content="Copyright 2024 Reza Boostani" />
         
+        {/* Enhanced SEO Meta Tags */}
+        <meta name="subject" content="Product Management, EV Charging, Sustainable Technology" />
+        <meta name="classification" content="Portfolio, Professional, Technology" />
+        <meta name="category" content="Technology" />
+        <meta name="coverage" content="Worldwide" />
+        <meta name="distribution" content="Global" />
+        <meta name="rating" content="General" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="language" content="English" />
+        <meta name="copyright" content="Reza Boostani" />
+        <meta name="reply-to" content="reza@rezaboostani.com" />
+        <meta name="owner" content="Reza Boostani" />
+        <meta name="url" content="https://www.rezaboostani.com" />
+        <meta name="identifier-URL" content="https://www.rezaboostani.com" />
+        <meta name="directory" content="submission" />
+        <meta name="pagename" content="Reza Boostani Portfolio" />
+        <meta name="resource-type" content="Document" />
+        <meta name="document-type" content="Public" />
+        <meta name="document-classification" content="Business" />
+        <meta name="document-rating" content="Safe for Kids" />
+        <meta name="revisit" content="7 days" />
+        <meta name="robots" content="ALL" />
+        <meta name="googlebot" content="ALL" />
+        <meta name="slurp" content="ALL" />
+        <meta name="msnbot" content="ALL" />
+        <meta name="teoma" content="ALL" />
+        <meta name="alexa" content="ALL" />
+        <meta name="google" content="notranslate" />
+        
         <link rel="canonical" href="https://www.rezaboostani.com/" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#2563eb" />
@@ -162,6 +210,111 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
         <meta name="apple-mobile-web-app-title" content="Reza Boostani" />
       </head>
+      
+      {/* Structured Data for Person */}
+      <Script
+        id="structured-data-person"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Reza Boostani",
+            "alternateName": "Reza Boostani",
+            "url": "https://www.rezaboostani.com",
+            "image": "https://www.rezaboostani.com/reza-profile-2025-v2.jpg",
+            "sameAs": [
+              "https://www.linkedin.com/in/rezaboostani",
+              "https://github.com/rezaboostani",
+              "https://twitter.com/rezaboostani"
+            ],
+            "jobTitle": "Product Manager & Technical Builder",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Freelance"
+            },
+            "alumniOf": {
+              "@type": "Organization",
+              "name": "McMaster University"
+            },
+            "knowsAbout": [
+              "Product Management",
+              "EV Charging",
+              "Sustainable Technology",
+              "SaaS",
+              "Startups",
+              "User Research",
+              "Product Strategy",
+              "Full Stack Development",
+              "Next.js",
+              "React",
+              "TypeScript"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Toronto",
+              "addressRegion": "Ontario",
+              "addressCountry": "Canada"
+            },
+            "description": "Reza Boostani is a product manager and technical builder based in Toronto, specializing in EV charging and sustainable technology."
+          })
+        }}
+      />
+
+      {/* Structured Data for Website */}
+      <Script
+        id="structured-data-website"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Reza Boostani Portfolio",
+            "url": "https://www.rezaboostani.com",
+            "description": "Reza Boostani - Product Manager and Technical Builder based in Toronto",
+            "author": {
+              "@type": "Person",
+              "name": "Reza Boostani"
+            },
+            "publisher": {
+              "@type": "Person",
+              "name": "Reza Boostani"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.rezaboostani.com/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })
+        }}
+      />
+
+      {/* Structured Data for Organization */}
+      <Script
+        id="structured-data-organization"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Reza Boostani",
+            "url": "https://www.rezaboostani.com",
+            "logo": "https://www.rezaboostani.com/reza-profile-2025-v2.jpg",
+            "description": "Product Manager and Technical Builder specializing in EV charging and sustainable technology",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Toronto",
+              "addressRegion": "Ontario",
+              "addressCountry": "Canada"
+            },
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "contactType": "customer service",
+              "availableLanguage": "English"
+            }
+          })
+        }}
+      />
       
       {/* Google Analytics */}
       <Script
@@ -178,7 +331,11 @@ export default function RootLayout({
             gtag('js', new Date());
             gtag('config', 'G-4EJCV66F7N', {
               page_title: 'Reza Boostani Portfolio',
-              page_location: 'https://www.rezaboostani.com/'
+              page_location: 'https://www.rezaboostani.com/',
+              custom_map: {
+                'custom_dimension1': 'user_type',
+                'custom_dimension2': 'page_section'
+              }
             });
           `,
         }}
