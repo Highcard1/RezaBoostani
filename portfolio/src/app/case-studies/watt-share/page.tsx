@@ -1,12 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { trackEvent } from "@/utils/analytics";
 import UserFlowDiagram from "@/components/UserFlowDiagram";
 import ImageModal from "@/components/ImageModal";
 
 export default function WattShareCaseStudy() {
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [videoError, setVideoError] = useState(false);
+
   useEffect(() => {
     trackEvent('view', 'case_study', 'watt_share');
   }, []);
@@ -164,14 +167,50 @@ export default function WattShareCaseStudy() {
               Watch this brief demo of the WattShare platform showcasing the user experience, booking flow, and key features that make peer-to-peer EV charging accessible and convenient.
             </p>
             <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute top-0 left-0 w-full h-full rounded-lg"
-                src="https://www.youtube.com/embed/HcpLd4Wfl_4"
-                title="WattShare Product Demo"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              ></iframe>
+              {!videoError ? (
+                <iframe
+                  className="absolute top-0 left-0 w-full h-full rounded-lg"
+                  src="https://www.youtube.com/embed/HcpLd4Wfl_4?rel=0&modestbranding=1"
+                  title="WattShare Product Demo"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  loading="lazy"
+                  onLoad={() => {
+                    console.log('WattShare video loaded successfully');
+                    setVideoLoaded(true);
+                  }}
+                  onError={(e) => {
+                    console.error('WattShare video failed to load:', e);
+                    setVideoError(true);
+                  }}
+                />
+              ) : (
+                <div className="absolute top-0 left-0 w-full h-full rounded-lg bg-gray-100 flex items-center justify-center">
+                  <div className="text-center p-8">
+                    <div className="text-6xl mb-4">📹</div>
+                    <h4 className="text-lg font-semibold text-gray-900 mb-2">Video Temporarily Unavailable</h4>
+                    <p className="text-gray-600 mb-4">The demo video is currently loading. Please try refreshing the page.</p>
+                    <a 
+                      href="https://www.youtube.com/watch?v=HcpLd4Wfl_4" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                    >
+                      Watch on YouTube
+                    </a>
+                  </div>
+                </div>
+              )}
+              
+              {!videoLoaded && !videoError && (
+                <div className="absolute top-0 left-0 w-full h-full rounded-lg bg-gray-100 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+                    <p className="text-gray-600">Loading video...</p>
+                  </div>
+                </div>
+              )}
             </div>
             <div className="mt-4 text-center">
               <p className="text-sm text-gray-500">
