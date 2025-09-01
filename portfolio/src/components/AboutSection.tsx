@@ -3,7 +3,7 @@ export default function AboutSection() {
     <section id="about" className="py-8 sm:py-16 px-2 sm:px-4 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-4xl lg:text-6xl font-bold mb-4">
             The Story
           </h2>
           <p className="text-base sm:text-lg max-w-2xl mx-auto">
@@ -13,14 +13,11 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
           <div className="space-y-4 sm:space-y-6">
             <p className="leading-relaxed text-sm sm:text-base lg:text-lg">
-              My journey started in engineering, but I quickly realized that the most impactful work happens at the intersection of strategy and execution. I&apos;m not just a product manager—I&apos;m a builder who understands the full stack, a strategist who validates with real users, and a leader who ships products that matter.
+            With my roots in engineering, I found my passion in turning big-picture strategy into a product people can actually use. My approach to product management is hands-on—I enjoy digging into the system architecture with engineers just as much as I enjoy validating ideas with users. My ultimate drive is to build and launch products that truly matter.
+
+My time in the startup world taught me how to do a bit of everything—from securing funding to launching first versions. I learned that the best products are born from a genuine curiosity about user problems and the technical skill to solve them. I'm at my best in dynamic environments where I can jump between user interviews, coding, and leading my team toward a common goal. My focus is clear: I want to help build a future with technology that is both sustainable and genuinely centered on people.
             </p>
-            <p className="leading-relaxed text-sm sm:text-base">
-              From technical roots to building startups, I&apos;ve secured funding, brought multiple MVPs to market, and learned that the best products come from deep user empathy combined with hands-on technical execution. I thrive in uncertainty and wear multiple hats—conducting user research, writing code, building partnerships, and leading cross-functional teams.
-            </p>
-            <p className="leading-relaxed text-sm sm:text-base">
-              My mission is simple: accelerate the transition to sustainable tech and user-first products.
-            </p>
+         
           </div>
           <div className="bg-gray-50 rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
             <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">
