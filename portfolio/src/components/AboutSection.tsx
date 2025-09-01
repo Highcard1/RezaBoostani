@@ -15,7 +15,7 @@ export default function AboutSection() {
             <p className="leading-relaxed text-sm sm:text-base lg:text-lg">
             With my roots in engineering, I found my passion in turning big-picture strategy into a product people can actually use. My approach to product management is hands-on—I enjoy digging into the system architecture with engineers just as much as I enjoy validating ideas with users. My ultimate drive is to build and launch products that truly matter.
 
-My time in the startup world taught me how to do a bit of everything—from securing funding to launching first versions. I learned that the best products are born from a genuine curiosity about user problems and the technical skill to solve them. I'm at my best in dynamic environments where I can jump between user interviews, coding, and leading my team toward a common goal. My focus is clear: I want to help build a future with technology that is both sustainable and genuinely centered on people.
+My time in the startup world taught me how to do a bit of everything—from securing funding to launching first versions. I learned that the best products are born from a genuine curiosity about user problems and the technical skill to solve them. I&apos;m at my best in dynamic environments where I can jump between user interviews, coding, and leading my team toward a common goal. My focus is clear: I want to help build a future with technology that is both sustainable and genuinely centered on people.
             </p>
          
           </div>
