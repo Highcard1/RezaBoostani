@@ -17,6 +17,7 @@ export default function AboutSection() {
 
 My time in the startup world taught me how to do a bit of everything—from securing funding to launching first versions. I learned that the best products are born from a genuine curiosity about user problems and the technical skill to solve them. I&apos;m at my best in dynamic environments where I can jump between user interviews, coding, and leading my team toward a common goal. My focus is clear: I want to help build a future with technology that is both sustainable and genuinely centered on people.
             </p>
+            
          
           </div>
           <div className="bg-gray-50 rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
