@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { trackEvent } from "@/utils/analytics";
 import Image from "next/image";
 import Header from "@/components/Header";
+import PasswordProtection from "@/components/PasswordProtection";
 
 export default function ThunderVoltCaseStudy() {
   useEffect(() => {
@@ -12,8 +13,9 @@ export default function ThunderVoltCaseStudy() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
+    <PasswordProtection correctPassword="Sprint2025" title="ThunderVolt case study">
+      <div className="min-h-screen bg-gray-50">
+        <Header />
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white pt-16 sm:pt-20">
@@ -515,5 +517,6 @@ export default function ThunderVoltCaseStudy() {
         </section>
       </div>
     </div>
+    </PasswordProtection>
   );
 } 

@@ -6,6 +6,7 @@ import { trackEvent } from "@/utils/analytics";
 import UserFlowDiagram from "@/components/UserFlowDiagram";
 import ImageModal from "@/components/ImageModal";
 import Header from "@/components/Header";
+import PasswordProtection from "@/components/PasswordProtection";
 
 export default function WattShareCaseStudy() {
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -16,8 +17,9 @@ export default function WattShareCaseStudy() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <Header />
+    <PasswordProtection correctPassword="Sprint2025" title="WattShare case study">
+      <div className="min-h-screen bg-gray-50">
+        <Header />
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white pt-16 sm:pt-20">
@@ -604,5 +606,6 @@ export default function WattShareCaseStudy() {
         </section>
       </div>
     </div>
+    </PasswordProtection>
   );
 } 
