@@ -93,7 +93,7 @@ export default function PasswordProtection({
           <p className="text-sm text-gray-500">
             Need access? Contact{" "}
             <a href="mailto:r.boostani.93@gmail.com" className="text-blue-600 hover:text-blue-700">
-              r_zeus_b@yahoo.com
+              r.boostani.93@gmail.com
             </a>
           </p>
         </div>
