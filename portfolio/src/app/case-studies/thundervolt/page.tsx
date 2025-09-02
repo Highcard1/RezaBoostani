@@ -13,7 +13,7 @@ export default function ThunderVoltCaseStudy() {
   }, []);
 
   return (
-    <PasswordProtection correctPassword="Sprint2025" title="ThunderVolt case study">
+    <PasswordProtection correctPassword="Sprint2025" title="ThunderVolt">
       <div className="min-h-screen bg-gray-50">
         <Header />
 

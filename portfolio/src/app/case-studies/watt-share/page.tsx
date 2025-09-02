@@ -17,7 +17,7 @@ export default function WattShareCaseStudy() {
   }, []);
 
   return (
-    <PasswordProtection correctPassword="Sprint2025" title="WattShare case study">
+    <PasswordProtection correctPassword="Sprint2025" title="WattShare">
       <div className="min-h-screen bg-gray-50">
         <Header />
 
