@@ -37,7 +37,7 @@ export default function HeroSection() {
               <meta itemProp="knowsAbout" content="Product Management, EV Charging, Sustainable Technology, SaaS, Startups" />
               
               <p className="text-lg sm:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl lg:mx-0 mx-auto font-medium" itemProp="description">
-                <strong>Reza Boostani</strong> - Product Manager & Entrepreneur | SaaS & Startups
+                <strong>Reza Boostani</strong> - Product Management & Entrepreneurship 
               </p>
               
               <p className="text-base sm:text-lg text-gray-500 mb-8 sm:mb-12 max-w-2xl lg:mx-0 mx-auto">
