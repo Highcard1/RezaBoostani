@@ -8,14 +8,16 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const isBlogPage = pathname?.startsWith('/blog');
+  const isCaseStudyPage = pathname?.startsWith('/case-studies');
+  const isNotMainPage = isBlogPage || isCaseStudyPage;
 
   const navItems = [
-    { name: "Home", href: isBlogPage ? "/#home" : "#home" },
-    { name: "About", href: isBlogPage ? "/#about" : "#about" },
-    { name: "Work", href: isBlogPage ? "/#work" : "#work" },
-    { name: "Tools", href: isBlogPage ? "/#tools" : "#tools" },
+    { name: "Home", href: isNotMainPage ? "/#home" : "#home" },
+    { name: "About", href: isNotMainPage ? "/#about" : "#about" },
+    { name: "Work", href: isNotMainPage ? "/#work" : "#work" },
+    { name: "Tools", href: isNotMainPage ? "/#tools" : "#tools" },
     { name: "Blog", href: "/blog" },
-    { name: "Contact", href: isBlogPage ? "/#contact" : "#contact" },
+    { name: "Contact", href: isNotMainPage ? "/#contact" : "#contact" },
   ];
 
   return (
@@ -25,7 +27,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link
-              href={isBlogPage ? "/#home" : "#home"}
+              href={isNotMainPage ? "/#home" : "#home"}
               className="text-lg sm:text-xl font-bold text-gray-900"
             >
               Reza Boostani

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import { trackEvent } from "@/utils/analytics";
+import Header from "@/components/Header";
 
 export default function IvyChargingCaseStudy() {
   useEffect(() => {
@@ -11,22 +12,10 @@ export default function IvyChargingCaseStudy() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link 
-            href="/#work" 
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
-            onClick={() => trackEvent('click', 'navigation', 'back_to_portfolio')}
-          >
-            <span className="mr-2">←</span>
-            Back to Portfolio
-          </Link>
-        </div>
-      </div>
+      <Header />
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-green-600 text-white">
+      <div className="bg-gradient-to-r from-blue-600 to-green-600 text-white pt-16 sm:pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
@@ -219,8 +208,8 @@ export default function IvyChargingCaseStudy() {
               <h3 className="text-xl font-semibold mb-4">Challenge: Grid Capacity</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold text-red-800 mb-2">Problem</h4>
-                  <p className="text-red-600">Existing electrical infrastructure couldn&apos;t support high-power DC fast chargers in many locations</p>
+                  <h4 className="font-semibold text-gray-800 mb-2">Problem</h4>
+                  <p className="text-gray-600">Existing electrical infrastructure couldn&apos;t support high-power DC fast chargers in many locations</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-green-800 mb-2">Solution</h4>
@@ -233,8 +222,8 @@ export default function IvyChargingCaseStudy() {
               <h3 className="text-xl font-semibold mb-4">Challenge: User Adoption</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold text-red-800 mb-2">Problem</h4>
-                  <p className="text-red-600">Initial user adoption was slow due to unfamiliarity with public charging</p>
+                  <h4 className="font-semibold text-gray-800 mb-2">Problem</h4>
+                  <p className="text-gray-600">Initial user adoption was slow due to unfamiliarity with public charging</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-green-800 mb-2">Solution</h4>

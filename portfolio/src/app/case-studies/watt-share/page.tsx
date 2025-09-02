@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { trackEvent } from "@/utils/analytics";
 import UserFlowDiagram from "@/components/UserFlowDiagram";
 import ImageModal from "@/components/ImageModal";
+import Header from "@/components/Header";
 
 export default function WattShareCaseStudy() {
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -16,22 +17,10 @@ export default function WattShareCaseStudy() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link 
-            href="/#work" 
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
-            onClick={() => trackEvent('click', 'navigation', 'back_to_portfolio')}
-          >
-            <span className="mr-2">←</span>
-            Back to Portfolio
-          </Link>
-        </div>
-      </div>
+      <Header />
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white">
+      <div className="bg-gradient-to-r from-green-600 to-blue-600 text-white pt-16 sm:pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
@@ -67,9 +56,9 @@ export default function WattShareCaseStudy() {
         {/* Problem Statement */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">The Problem</h2>
-          <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
-            <h3 className="text-xl font-semibold text-red-800 mb-4">Market Gap Identified</h3>
-            <ul className="space-y-3 text-red-700">
+          <div className="bg-gray-50 border-l-4 border-gray-400 p-6 rounded-r-lg">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">Market Gap Identified</h3>
+            <ul className="space-y-3 text-gray-700">
               <li className="flex items-start">
                 <span className="mr-2 mt-1">•</span>
                 <span>EV owners with home chargers had unused capacity 80% of the time</span>
@@ -108,7 +97,7 @@ export default function WattShareCaseStudy() {
               <div>
                 <h4 className="font-semibold text-gray-800 mb-3">Key Insights</h4>
                 <ul className="space-y-2 text-gray-600">
-                  <li>• 70% of EV owners open to sharing their charger</li>
+                  <li>• EV owners open to sharing their charger</li>
                   <li>• Average willingness to pay: $2-4/hour</li>
                   <li>• Safety and trust were primary concerns</li>
                   <li>• Scheduling flexibility was crucial</li>

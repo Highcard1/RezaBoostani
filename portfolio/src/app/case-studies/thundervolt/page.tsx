@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { trackEvent } from "@/utils/analytics";
 import Image from "next/image";
+import Header from "@/components/Header";
 
 export default function ThunderVoltCaseStudy() {
   useEffect(() => {
@@ -12,22 +13,10 @@ export default function ThunderVoltCaseStudy() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <div className="bg-white shadow-sm border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link 
-            href="/#work" 
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
-            onClick={() => trackEvent('click', 'navigation', 'back_to_portfolio')}
-          >
-            <span className="mr-2">←</span>
-            Back to Portfolio
-          </Link>
-        </div>
-      </div>
+      <Header />
 
       {/* Hero Section */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white pt-16 sm:pt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <div className="text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
@@ -127,12 +116,12 @@ export default function ThunderVoltCaseStudy() {
               </div>
             </div>
             
-            <div className="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
-              <h3 className="text-xl font-semibold text-red-800 mb-4">The Condo Conundrum: A Systemic Infrastructure Failure</h3>
+            <div className="bg-gray-50 border-l-4 border-gray-400 p-6 rounded-r-lg">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">The Condo Conundrum: A Systemic Infrastructure Failure</h3>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold text-red-700 mb-2">Regulatory Labyrinth</h4>
-                  <ul className="space-y-1 text-red-600">
+                  <h4 className="font-semibold text-gray-700 mb-2">Regulatory Labyrinth</h4>
+                  <ul className="space-y-1 text-gray-600">
                     <li>• Complex permit requirements</li>
                     <li>• Extensive documentation needed</li>
                     <li>• Electrical service upgrades required</li>
@@ -140,8 +129,8 @@ export default function ThunderVoltCaseStudy() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-red-700 mb-2">Exorbitant Costs</h4>
-                  <ul className="space-y-1 text-red-600">
+                  <h4 className="font-semibold text-gray-700 mb-2">Exorbitant Costs</h4>
+                  <ul className="space-y-1 text-gray-600">
                     <li>• Installation costs: $3,000-$5,000</li>
                     <li>• EVSE unit: ~$1,000</li>
                     <li>• Total investment: $4,000-$6,000+</li>
