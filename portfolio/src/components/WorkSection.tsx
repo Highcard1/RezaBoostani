@@ -57,7 +57,7 @@ export default function WorkSection() {
         "Built seamless cross-platform experience"
       ],
       impact: [
-        "+60% user satisfaction score",
+        "+20% user satisfaction score",
         "+50% revenue through new channel",
       ,
         "Increased sales by 50%"
